@@ -1,0 +1,49 @@
+<HTML><HEAD><title>SELECT</title>
+<SCRIPT LANGUAGE="JavaScript">
+
+function reflect(aForm)
+{
+    var myIndex = aForm.units.selectedIndex
+    var myText = aForm.units.options[myIndex].text
+    aForm.result.value = myText
+}
+
+</SCRIPT></HEAD>
+
+<BODY bgcolor="ffffff" link="0000ff" vlink="770077">
+    
+<FONT COLOR="007777"><H1>Меню Выбора (SELECT)</H1></FONT>
+    <BLOCKQUOTE><FONT COLOR="770000">
+ Выбор нужного значения.
+    </FONT></BLOCKQUOTE>
+    
+
+    <CENTER><FORM>
+
+    <SELECT name="units">
+      <OPTION selected>val_1
+      <OPTION>val_2
+      <OPTION>val_3
+      <OPTION>val_4
+    </SELECT>
+    
+    <INPUT NAME="result"  SIZE="20" VALUE="" ><p>
+    
+    <INPUT TYPE="button" VALUE="показать выбор"
+      onClick="reflect(this.form)">
+
+    <INPUT TYPE="reset" VALUE="ResetAll">
+    </FORM></CENTER>
+
+В программе использована следующая функция
+    
+<FONT COLOR="770000"><PRE>
+function reflect(aForm)
+{
+    var myIndex = aForm.units.selectedIndex
+    var myText = aForm.units.options[myIndex].text
+    aForm.result.value = myText
+}
+</PRE></FONT>
+</BODY>
+</HTML>

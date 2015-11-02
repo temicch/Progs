@@ -1,0 +1,30 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 3.2//RU">
+<HTML><HEAD>
+<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=Windows-1251">
+<TITLE>Лабораторная 2.4</TITLE>
+
+<script language="JavaScript">
+function GetAcreage(value)
+{
+	document.f1.i2.value = value*value;
+}
+</script>
+</HEAD> 
+<style>
+body
+{
+	background-image: url(../img1.gif); /* Путь к фоновому рисунку */
+	background-repeat: round; /* Повторяем фон по горизонтали */
+}
+</style>
+<BODY BGCOLOR="white" TEXT="black" LINK="blue" ALINK="red" VLINK="green" BGPROPERTIES=FIXED >
+<p><b>Вычисление площади</b></p>
+
+<FORM ACTION="http://intranet/local" METHOD=POST name="f1">
+<P>Автоматически</p>
+<p>Сторона<INPUT NAME="i1" TYPE=TEXTBOX onKeyUp = "GetAcreage(value)">
+<p>Площадь<INPUT TYPE= TEXTBOX NAME="i2" readonly>
+</FORM>
+</BODY>
+</HTML>
+

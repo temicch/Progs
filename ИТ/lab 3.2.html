@@ -1,0 +1,103 @@
+﻿
+<HTML>
+<HEAD>
+<TITLE>Лабораторная работа 3.2</TITLE>
+</HEAD>
+
+
+<script language="JavaScript">
+var str, strtemp;
+function setCookie (name, value, lostenter) 
+{
+    d = new Date();
+	d2 = new Date(lostenter);
+    d.setTime(d.getTime() + (3*365*24*60*60*1000));
+	document.cookie = name + "=" + value + "="+ d2.toUTCString()+"=" + "; expires=" + d.toUTCString();
+}
+
+
+function getCookie() 
+{   
+	if (document.cookie.length > 0) 
+	{
+		strtemp = document.cookie;
+		str = strtemp.split('=');
+		return 1;
+	}
+	return 0;
+}
+
+function buttonClear()
+{
+	setCookie(str[0], 0, str[2]);
+	getCookie();
+	login();
+}
+
+function buttonReg()
+{
+	if(document.getElementById('textInput').value == "")
+	{
+		document.getElementById('textInput').value = "Неверно введены данные";
+		return;
+	}
+	cDate = new Date();
+	setCookie(document.getElementById('textInput').value, 0, cDate.getTime());
+	document.getElementById('text').innerHTML = "";
+	getCookie();
+	login();
+}
+
+function login()
+{
+	d = new Date();
+
+	then = new Date(str[2]);
+
+	alert(str[2]);
+	
+    secondsLeft = Math.round((60 - then.getSeconds() + d.getSeconds())%60);
+	minutesLeft = Math.round((60 - then.getMinutes() + d.getMinutes())%60);
+	hoursLeft = Math.round((24 - then.getHours() + d.getHours())%24);
+	msPerDay = 24 * 60 * 60 * 1000 ; // Number of milliseconds per day
+	daysLeft = Math.round((then.getTime() - d.getTime()) / msPerDay);	
+	monthsLeft = (12 - then.getMonth() + d.getMonth()) % 12;
+	// Небольшая поправочка для месяцев, оч нужная
+	if((d.getFullYear() - then.getFullYear() > 1) || 
+		d.getMonth() >= then.getMonth() && d.getFullYear() != then.getFullYear()) 
+			monthsLeft += 12 * (d.getFullYear() - then.getFullYear());
+	if(d.getFullYear() - then.getFullYear() > 1 && d.getMonth() >= then.getMonth()) 
+	 	monthsLeft -=12;
+	
+	setCookie(str[0], (Number(str[1])+1), d.getTime());
+	getCookie();
+	document.getElementById('but').type = 'HIDDEN';
+	document.getElementById('clear').type = 'button';
+	
+	document.getElementById('text').innerHTML = "<b>COOKIE</b><br><br>Доброй ночи, " + 
+	str[0] + "!<br>Вы были на этой странице: " + 
+	str[1] + " раз" +
+	"<br>Последний раз вы заходили: " +
+	((monthsLeft) ? monthsLeft + " месяцев " : "") +
+	((daysLeft) ? daysLeft + " дней " : "") +
+	((hoursLeft) ? hoursLeft + " часов " : "") +
+	((minutesLeft) ? minutesLeft + " минут " : "") +
+	((secondsLeft) ? secondsLeft + " секунд " : "") + " назад";
+}
+
+function registrate()
+{
+	document.getElementById('but').type = "button";
+	document.getElementById('clear').type = "HIDDEN";
+	document.getElementById('text').innerHTML = "<b>COOKIE</b><br><br>Доброй ночи! <br>Представьтесь, пожалуйста <br><input id = 'textInput' type = 'text'><br>";
+}
+</script>
+
+<BODY onLoad = "getCookie() ? login() : registrate()">
+
+<span id="text">
+</span>
+<br>
+<input  id = "but" type="button" onClick = "buttonReg()" value = "Изменить имя">
+<input  id = "clear" type="button" onClick = "buttonClear()" value = "Обнулить посещения">
+</BODY></HTML>

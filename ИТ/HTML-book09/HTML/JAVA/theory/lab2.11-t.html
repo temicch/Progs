@@ -1,0 +1,82 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//RU">
+<HTML>
+<HEAD>
+<TITLE>Теория к лаб. работе N 2.11</TITLE>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1251">
+<link REL="stylesheet" TYPE="text/css" HREF="mstyle.css">
+</HEAD>
+<BODY>
+<h2>Массивы в JavaScript</h2>
+<p>JavaScript не имеет определенного типа данных для работы с массивами, поэтому был создан встроенный объект Array. </p>
+<p>Создание массива может происходить двумя способами:</p>
+<ol>
+  <li>Создание массива без инициализации.<br><br>
+    <table><tr><td bgcolor=aqua><pre>
+имя_массива = new Array(количество_элементов);</pre></td></tr></table><br>
+    При этом создается пустой массив с требуемым количеством элементов. Для примера:<br><br>
+    <table><tr><td bgcolor=aqua><pre>
+ar1 = new Array(5); //массив из 5 элементов</pre></td></tr></table><br>
+  </li>
+  <li>Создание массива с инициализацией. <br><br>
+    <table><tr><td bgcolor=aqua><pre>
+имя_массива = new Array(элемент1,элемент2,...,элементN);</pre></td></tr></table><br>
+    Создается массив из N элементов и каждому элементу присваивается соответствующее значение из списка. Например: <br><br>
+    <table><tr><td bgcolor=aqua><pre>
+ar2 = new Array(123,&quot;ABC&quot;,ar1);</pre></td></tr></table><br>
+    В качестве значения элемента может быть символьное значение, числовое или значение, содержащееся в указанной    переменной. Заметьте, что в примере последний элемент задается как массив ar1, который мы создали ранее. Странно с одной стороны, но на самом деле это потрясающая возможность JavaScript, не во всех языках элементом массива так    спокойно может оказаться другой массив. Таким образом можно делать многомерные массивы.
+  </li>
+</ol>
+<p>Обращаться к элементам массива можно обычным методом, указывая конкретный номер элемента массива. Например: <br><br>
+<table><tr><td bgcolor=aqua><pre>
+ar1[0]=1;
+ar2[1]=ar1;</pre></td></tr></table><br>
+<p>У объекта Array есть несколько методов, изменяющих состояние массива. Наиболее часто используемые:</p>
+<ul>
+  <li>
+  Метод reverse() &quot;переворачивает&quot; весь массив. При этом значение первого элемента массива принимает значение последнего, а последний первого. Пример: <br><br>
+  <table><tr><td bgcolor=aqua><pre>
+pr = new Array(1,2,3,4,5);
+pr.reverse();
+document.write(pr);</pre></td></tr></table><br>
+  В результате выполнения будет выведен результат: <br><br>
+  <table><tr><td bgcolor=aqua><pre>
+5,4,3,2,1</pre></td></tr></table><br></li>
+  
+  <li>
+  Метод sort() сортирует элементы массива по возрастанию. <br><br>
+  <table><tr><td bgcolor=aqua><pre>
+pr = new Array('c',5,2,'b',3,1,4,'a');
+pr.sort();
+document.write(pr);</pre></td></tr></table><br>
+  Результат будет такой: <br><br>
+  <table><tr><td bgcolor=aqua><pre>
+1,2,3,4,5,a,b,c</pre></td></tr></table><br></li>
+  
+  <li>
+  Метод join() возвращает строку с перечислением всех элементов массива. По умолчанию разделителем элементов является символ &quot;,&quot; (запятая), но при вызове метода можно задавать строку разделитель. Пример: <br><br>
+  <table><tr><td bgcolor=aqua><pre>
+pr = new Array(1,2,3,4,5);
+s1=pr.join();
+s2=pr.join(&quot; + &quot;);
+document.writeln(&quot;s1 = &quot;,s1);
+document.writeln(&quot;s2 = &quot;,s2);</pre></td></tr></table><br>
+  В результате будут выведены такие значения: <br><br>
+  <table><tr><td bgcolor=aqua><pre>
+s1 = 1,2,3,4,5
+s2 = 1 + 2 + 3 + 4 + 5</pre></td></tr></table><br></li>
+</ul>
+
+<p>Размер массива хранится в свойстве length и вы всегда можете получить его значение. Также стоит отметить, что массивы Array могут изменять размер в процессе работы. Пример: <br><br>
+<table><tr><td bgcolor=aqua><pre>
+pr = new Array(0,1,2,3,4);
+document.writeln(&quot;Len = &quot;,pr.length,&quot;, pr = &quot;,pr);
+pr[7]=7;
+document.writeln(&quot;Len = &quot;,pr.length,&quot;, pr = &quot;,pr);</pre></td></tr></table><br>
+<p>Результат: <br><br>
+<table><tr><td bgcolor=aqua><pre>
+Len = 5, pr = 0,1,2,3,4
+Len = 7, pr = 0,1,2,3,4,,,7</pre></td></tr></table><br>
+<p>Как видите, размер массива увеличился, а промежуточные элементы получили пустые значения.</p>
+</BODY>
+</HTML>
+

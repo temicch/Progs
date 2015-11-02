@@ -1,0 +1,52 @@
+<html>
+<head>
+<script language="JavaScript">
+<!-- hide
+
+// define the text of the scroller
+var scrtxt = "Это JavaScript! " + "Это JavaScript! " + "Это JavaScript!"; 
+var len = scrtxt.length;
+var width = 100;
+var pos = -(width + 2);
+
+function scroll() {
+
+  // напечатать заданный текст справа и установить таймер 
+
+  // перейти на исходную позицию для следующего шага 
+  pos++;
+
+  // вычленить видимую часть текста 
+  var scroller = "";
+  if (pos == len) {
+    pos = -(width + 2);
+  }
+
+  // если текст еще не дошел до левой границы, то мы должны 
+  // добавить перед ним несколько пробелов. В противном случае мы должны 
+  // вырезать начало текста (ту часть, что уже ушла за левую границу 
+  if (pos < 0) {
+    for (var i = 1; i <= Math.abs(pos); i++) {
+      scroller = scroller + " ";}
+    scroller = scroller + scrtxt.substring(0, width - i + 1);
+  }
+  else {
+    scroller = scroller + scrtxt.substring(pos, width + pos);
+  }
+
+  // разместить текст в строке состояния 
+  window.status = scroller;
+
+  // вызвать эту функцию вновь через 100 миллисекунд 
+  setTimeout("scroll()", 100);
+}
+
+// -->
+</script>
+</head>
+
+<body onLoad="scroll()">
+<a href="basics.html"><img src="icons/home.gif" border=0 alt="Домой" width=64 height=64></a>
+<P>Это пример прокрутки в строке состояния средствами JavaScript.
+</body>
+</html>

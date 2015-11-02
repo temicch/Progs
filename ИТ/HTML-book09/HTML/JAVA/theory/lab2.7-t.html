@@ -1,0 +1,158 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//RU">
+<HTML>
+<HEAD>
+<TITLE>Теория к лаб. работе N 2.7</TITLE>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1251">
+<link REL="stylesheet" TYPE="text/css" HREF="mstyle.css">
+</HEAD>
+<BODY>
+      <h2>Метод charAt</h2>
+
+<pre class="syntax"><strong><a name="mcharat">Синтаксис</a></strong>: <em>объект</em>.charAt(<em>позиция</em>)
+<strong>Аргументы</strong>: <em>позиция</em>&nbsp;&#151; любое числовое выражение
+<strong>Результат</strong>: строковое значение</pre>
+
+      <p>Метод <strong>charAt</strong> возвращает строку, состоящую из символа, расположенного в данной
+        <em>позиции</em> примитивного значения строкового <em>объекта</em>. Позиции символов строки
+        нумеруются от нуля до <em>объект</em>.<strong>length</strong>-1.
+        Если позиция лежит вне этого диапазона, то возвращается пустая строка. Например, оператор 
+
+<table><tr><td bgcolor=aqua>
+<pre>document.write(&quot;Строка&quot;.charAt(0))</pre>
+</td></tr></table>
+        выведет на экран обозревателя символ <samp>С</samp>.</p>
+
+<h2>Метод split()</h2>
+<p>Метод split() создает новый массив, а затем копирует часть строки в элементы этого массива. Методу split() необходимо указать, какая строка (разделитель) будет использоваться для разделения подстрок на строки. Это можно сделать путем передачи строки в виде аргумента методу split(). Вот пример использования метода split():<br>
+
+<table><tr><td bgcolor=aqua>
+<pre>var NewStringArray = StringName.split('delimeter string')</pre>
+</td></tr></table>
+
+<p>Следующий скрипт показывает, каким образом метод split() делит строки на элементы массива с запятой в роли разделителя.
+
+<table><tr><td bgcolor=aqua>
+<pre><xmp>
+var DataString='Bob Smith, Mary Jones, Tom Roberts, Sue Baker';
+var NewArray = DataString.split(',');
+document.write(DataString);
+document.write('<br>');
+for (i=0; i<4; i++)
+	{
+	document.write(NewArray[i]);
+	document.write('</br>');
+	}
+</xmp></pre>
+</td></tr></table>
+
+В результате на экране будут отображены и строка со всеми именами, и элементы массива с каждым именем:
+<table><tr><td bgcolor=aqua><pre>
+Bob Smith, Mary Jones, Tom Roberts, Sue Baker
+Bob Smith
+Mary Jones
+Tom Roberts
+Sue Baker
+</pre>
+</td></tr></table>
+
+<h2>Метод charCodeAt()</h2>
+<p>Метод charCodeAt() возвращает Unicode-номер символа в строке:
+
+<table><tr><td bgcolor=aqua><pre>
+var UnicodeNum = StringName.charCodeAt();
+</pre></td></tr></table>
+<p>Вот каким образом можно узнать Unicode-номер для буквы w:
+<table><tr><td bgcolor=aqua><pre><xmp>
+var Letter = 'w';
+var UnicodeNum = Letter.charCodeAt();
+</xmp></pre></td></tr></table>
+<p>Метод Letter.charCodeAt() возвращает число 119, которое и является Unicode-номером для буквы w. Причем буквы верхнего и нижнего регистров имеют разные номера (еще их называют кодами).   
+
+ <A NAME="list_textarea">
+<H2> Объект textarea </H2> 
+<P>
+Область многострочного ввода формы HTML. Область <b>textarea</b> позволяет пользователю, вводит слова, фразы, или числа. 
+<H3> Синтаксис</H3> 
+<P>
+Чтобы определить область <b>textarea</b>, используйте стандарт HTML синтаксис с использованием обработчиков событий onBlur, onChange, onFocus, и onSelect:
+<table><tr><td bgcolor=aqua> 
+<PRE>   
+&LT;TEXTAREA 
+NAME = <I>"textareaName"</I> 
+STRING = <I>"integer" </I>
+ROWS = <I>"integer" </I>
+WRAP <I>"integer"</I> ="off|virtual|physical" 
+[onBlur = <I>"handlerText"</I>] 
+[onChange = <I>"handlerText"</I>] 
+[onFocus = <I>"handlerText"</I>] 
+[onSelect = <I>"handlerText"</I>]&GT ;
+<I>TextToDisplay</I> 
+&LT;TEXTAREA&GT;
+ </PRE> </td></tr></table>
+<I>NAME ="textareaName"</I> определяет имя объекта <b>textarea</b>. Вы можете обращаться к этому значению, используя свойство name. <BR>
+<I>STRING ="integer"</I> и <I> ROWS ="integer"</I> определяют размер области ввода. <BR>
+<I>textToDisplay</I> определяет начальное значение объекта <b>textarea</b>. Вы можете обращаться к этому значению, используя свойство defaultValue. 
+<P>
+ Атрибут WRAP управляет переходом на новую строку внутри тега <B>TEXTAREA</B>. <P>
+Использование свойств объекта и методы <b>textarea</b>: 
+<PRE>  
+1. <I>textareaName</I>.<I>propertyName </I>
+2. <I>textareaName</I>.<I>methodName</I> <I>( parameters)</I> 
+3. <I>formName</I>.elements <I>[ index]</I> .<I>propertyName </I>
+4. <I>formName.elements[index].methodName(parameters)</I> </PRE> 
+<I>textareaName</I> - значение атрибута NAME объекта <b>textarea</b>. <BR>
+<I>formName</I> является либо значением атрибута NAME объекта form либо элемента в массиве <I>form</I>. <BR>
+<I>index</I> - целое число, представляющее объект <b>textarea</b> формы. <BR>
+<I>propertyName</I> - один из свойства, описанных  ниже. <BR>
+<I>methodName</I> - один из методов, описанных  ниже. 
+<H3> Свойство</H3> 
+<LI> form 
+<H3> Описание</H3> 
+<P>
+Объект <b>textarea</b> формы выглядит следующим образом: 
+<FORM>  
+<P>
+<TEXTAREA NAME="list_item_description" ROWS=5 COLS=45>
+ Our storage ottoman provides an attractive way to
+store lots of CDs and videos--and it's versatile
+enough to store other things as well.
+It can hold up to 72 CDs under the lid and 20 videos
+in the drawer below.
+</TEXTAREA>
+</FORM>
+<P>
+Объект <b>textarea</b> - элемент формы и должен быть определен внутри тега &LT;FORM&GT;. 
+<P>
+Объекты  <b>textarea</b> могут модифицироваться динамически,  изменяя  свойство value (this.value). 
+<P>
+Чтобы перейти на новую строку в объекте <b>textarea</b>, вы можете использовать символ newline. Этот символ изменяется в зависимости от платформы для платформы: Unix - \n, Windows - \r\n, и Macintosh - \n. Один способ ввода символа newline состоит в том, чтобы проверить свойство appVersion, для определения текущей платформы и изменить символ newline соответственно.
+<H3> Свойства</H3> 
+<LI> defaultValue отражает атрибут VALUE
+<LI>  nameо тражает атрибут NAME
+<LI>  value  отражает текущую значение объекта <b>textarea</b> 
+<H3> Методы</H3> 
+<LI> focus 
+<LI> blur 
+<LI> select<
+<H3> Обработчики событий</H3> 
+<LI> onBlur
+<LI> onChange 
+<LI> onFocus
+<li> onSelect
+<H3> Примеры</H3> 
+<P>
+Следующий пример создает объект <b>textarea</b>, длиной в 6 строк и шириной в 55 столбцов. Ообласть <b>textarea</b> появляется сразу же после слова"Описание:". Когда форма загружена, объект <b>textarea</b> содержит несколько строк данных, включая одну незаполненную строку. 
+<table><tr><td bgcolor=aqua><pre><xmp>
+
+ <B>Описание:</B> <BR>
+ Our storage ottoman provides an attractive way to
+store lots of CDs and videos--and it's versatile
+enough to store other things as well.
+
+It can hold up to 72 CDs under the lid and 20 videos
+in the drawer below.
+</TEXTAREA>
+</xmp></pre></td></tr></table>
+<P>
+</body>
+</html>
