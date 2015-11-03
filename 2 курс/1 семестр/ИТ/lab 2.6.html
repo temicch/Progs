@@ -1,0 +1,43 @@
+﻿<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 3.2//RU">
+<HTML><HEAD>
+<meta charset="utf-8">
+<TITLE>Лабораторная работа 2.6</TITLE>
+</HEAD> 
+
+<script language="JavaScript">
+	function SetAllTable()
+	{
+if(document.frameOne.inFrame1.value != "")
+		document.all("tableOne").border = document.frameOne.inFrame1.value;
+if(document.frameOne.inFrame2.value != "")
+		document.all("tableOne").cellSpacing = document.frameOne.inFrame2.value;
+if(document.frameOne.inFrame3.value != "")
+		document.all("tableOne").cellPadding = document.frameOne.inFrame3.value;
+		
+	}
+</script>
+
+<BODY BGCOLOR="white" 
+ TEXT="black" LINK="blue" ALINK="red" VLINK="green">
+
+
+<FORM ACTION="http://intranet/local" METHOD=POST name = "frameOne">
+<TABLE WIDTH="60%" id = "tableOne">
+	<CAPTION><i>Форма</i></CAPTION>
+	<TR BGCOLOR = lightgrey>
+		<TH>border</TH>
+		<TH>cellSpacing </TH>
+		<TH>cellPadding</TH>
+	</TR>
+	<TR BGCOLOR = white>
+		<TH><INPUT NAME="inFrame1" TYPE=TEXTBOX></TH>
+		<TH><INPUT NAME="inFrame2" TYPE=TEXTBOX></TH>
+		<TH><INPUT NAME="inFrame3" TYPE=TEXTBOX></TH>
+	</TR>
+</TABLE>
+<INPUT TYPE="button" VALUE="Изменить" OnClick="SetAllTable()">
+</FORM>
+
+</BODY>
+</HTML>
+

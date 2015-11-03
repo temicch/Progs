@@ -1,0 +1,181 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//RU">
+<HTML>
+<HEAD>
+<TITLE>Теория к лаб. работе N 2.12</TITLE>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1251">
+<link REL="stylesheet" TYPE="text/css" HREF="mstyle.css">
+</HEAD>
+<BODY>
+<h2>Динамическая работа с таблицами. Объект Table</h2>
+
+Часто при использовании html таблиц с помощью JavaScript можно избежать лишних перезагрузок страницы,
+улучшить юзабилити и упростить работу пользователей. Под динамической работой понимается:</p>
+
+<ul>
+<li><a href="#1">Cоздание</a>;</li>
+<li><a href="#2">Управление атрибутами</a>;</li>
+<li><a href="#3">Добавление/удаление столбцов и строк</a>;</li>
+<li><a href="#4">Перемещение строк</a>;</li>
+<li><a href="#5">Заполнение ячеек</a></li>
+</ul>
+
+<a name="1">
+<h3>Создание таблицы</h3></a>
+Для того, чтобы создать новую таблицу на странице нужно сгенерировать элемент TABLE (createElement()) и добавить его в иерархическую структуру документа с помощью метода appendChild():<br><br>
+<table><tr><td bgcolor=aqua><pre>
+var newElem=document.createElement('table'); 
+document.body.appendChild(newElem);</pre></td></tr></table><br>
+
+<a name="2">
+<h3>Управление атрибутами</h3></a>
+Есть два способа присвоения атрибутов элементу: использование метода setAttribute(): <br><br>
+<table><tr><td bgcolor=aqua><pre>
+var newElem=document.createElement('table'); 
+newElem.setAttribute('id','tl');
+newElem.setAttribute('width','500');
+newElem.setAttribute('border','1'); 
+document.body.appendChild(newElem);</pre></td></tr></table><br>
+
+и прямое обращение к свойствам объекта:<br><br>
+<table><tr><td bgcolor=aqua><pre>
+var newElem=document.createElement('table'); 
+newElem.id='tl';
+newElem.width=500;
+newElem.border=1; 
+document.body.appendChild(newElem);</pre></td></tr></table><br>
+
+Есть и более простой способ добавления в документ таблицы с определенными атрибутами:<br><br>
+<table><tr><td bgcolor=aqua><pre>
+document.body.innerHTML='&lt;table id=&quot;tl&quot; width=&quot;500&quot; border=&quot;1&quot;&gt;&lt;/table&gt;';</pre></td></tr></table><br>
+
+<a name="3"><a name="4">
+<h3>Добавление/удаление столбцов и строк. Перемещение строк</h3></a></a>
+Для вставки строк используется метод insertRow(), ячеек - insertCell():<br><br>
+
+<table><tr><td bgcolor=aqua><pre>
+var newElem=document.createElement("table");
+	    
+var newRow=newElem.insertRow(0);
+var newCell = newRow.insertCell(0);
+newCell.width="200";
+newCell.innerHTML="<b>строка 1 столбец 1</b>";
+    
+var newCell = newRow.insertCell(1);
+newCell.width="400";
+newCell.innerHTML="<b>строка 1 столбец 2</b>";
+    
+var newRow=newElem.insertRow(1);
+var newCell = newRow.insertCell(0);
+newCell.width="200";
+newCell.innerHTML="<b>строка 2 столбец 1</b>";
+    
+var newCell = newRow.insertCell(1);
+newCell.width="400";
+newCell.innerHTML="<b>строка 2 столбец 2</b>";
+    
+document.body.appendChild(newElem);</pre></td></tr></table><br>
+
+Для удаления строк используется метод deleteRow(), по своей конструкции аналогичный методу insertRow(),
+ячейки - deleteCell(). Для перемещения строк существует функция moveRow(индекс_источника, индекс_приёмника),
+но она пока работает только в IE.
+
+Следующий пример работает только в IE:<br><br>
+
+<table><tr><td bgcolor=aqua><pre>
+&lt;script language=&quot;JavaScript&quot;&gt;
+function delete_tr(obj)
+{
+    var dt = document.getElementById("t1");
+    var num_tr=obj.parentNode.sectionRowIndex;
+    dt.deleteRow(num_tr)
+}
+function up_tr(obj)
+{
+    var dt = document.getElementById("t1");
+    var num_tr=obj.parentNode.sectionRowIndex;
+    if (num_tr!=0) dt.moveRow(num_tr, num_tr-1);
+}
+function down_tr(obj)
+{
+    var dt = document.getElementById("t1");
+    var num_all_tr=obj.parentNode.parentNode.childNodes.length;
+    var num_tr=obj.parentNode.sectionRowIndex;
+    if (num_tr!=num_all_tr-1) dt.moveRow(num_tr, num_tr+1);
+}
+&lt;/script&gt;
+
+&lt;table id=&quot;t1&quot; width=&quot;400&quot; border=&quot;1&quot;&gt;
+    &lt;tr&gt;
+        &lt;td width=&quot;10&quot;&gt;&lt;b&gt;0&lt;/b&gt;&lt;/td&gt;
+        &lt;td onclick=&quot;delete_tr(this)&quot;&gt;удалить строку&lt;/a&gt;&lt;/td&gt;
+        &lt;td onclick=&quot;up_tr(this)&quot;&gt;поднять строку&lt;/td&gt;
+        &lt;td onclick=&quot;down_tr(this)&quot;&gt;опустить строку&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td width=&quot;10&quot;&gt;&lt;b&gt;1&lt;/b&gt;&lt;/td&gt;
+        &lt;td onclick=&quot;delete_tr(this)&quot;&gt;удалить строку&lt;/a&gt;&lt;/td&gt;
+        &lt;td onclick=&quot;up_tr(this)&quot;&gt;поднять строку&lt;/td&gt;
+        &lt;td onclick=&quot;down_tr(this)&quot;&gt;опустить строку&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td width=&quot;10&quot;&gt;&lt;b&gt;2&lt;/b&gt;&lt;/td&gt;
+        &lt;td onclick=&quot;delete_tr(this)&quot;&gt;удалить строку&lt;/a&gt;&lt;/td&gt;
+        &lt;td onclick=&quot;up_tr(this)&quot;&gt;поднять строку&lt;/td&gt;
+        &lt;td onclick=&quot;down_tr(this)&quot;&gt;опустить строку&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;</pre></td></tr></table><br>
+
+<script language="javascript">
+var dt = document.getElementById("t1");
+function delete_tr(obj)
+{
+	var dt = document.getElementById("t1");
+    var num_tr=obj.parentNode.sectionRowIndex;
+    dt.deleteRow(num_tr)
+}
+function up_tr(obj)
+{
+	var dt = document.getElementById("t1");
+    var num_tr=obj.parentNode.sectionRowIndex;
+    if (num_tr!=0) dt.moveRow(num_tr, num_tr-1);
+}
+function down_tr(obj)
+{
+	var dt = document.getElementById("t1");
+    var num_all_tr=obj.parentNode.parentNode.childNodes.length;
+    var num_tr=obj.parentNode.sectionRowIndex;
+    if (num_tr!=num_all_tr-1) dt.moveRow(num_tr, num_tr+1);
+} 
+</script>
+
+<table id="t1" width="400" border="1">
+    <tr>
+        <td width="10"><b>0</b></td>
+        <td onclick="delete_tr(this)">удалить строку</a></td>
+        <td onclick="up_tr(this)">поднять строку</td>
+        <td onclick="down_tr(this)">опустить строку</td>
+    </tr>
+    <tr>
+        <td width="10"><b>1</b></td>
+        <td onclick="delete_tr(this)">удалить строку</a></td>
+        <td onclick="up_tr(this)">поднять строку</td>
+        <td onclick="down_tr(this)">опустить строку</td>
+    </tr>
+    <tr>
+        <td width="10"><b>2</b></td>
+        <td onclick="delete_tr(this)">удалить строку</a></td>
+        <td onclick="up_tr(this)">поднять строку</td>
+        <td onclick="down_tr(this)">опустить строку</a></td>
+    </tr>
+</table> 
+
+<a name="5">
+<h3>Заполнение ячеек</h3>
+Заполнение ячеек возможно с помощью свойств innerHTML и innerTEXT. Главное различие между свойствами innerHTML и innerTEXT в том, что свойства HTML представляют разметку целиком, тогда как свойства TEXT представляют содержание без разметки. Пример использования:<br><br>
+
+<table><tr><td bgcolor=aqua><pre>
+document.getElementById('идентификатор').innerHTML = 'something';</pre></td></tr></table><br>
+
+</BODY>
+</HTML>
+

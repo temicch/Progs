@@ -1,0 +1,434 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//RU">
+<HTML>
+<HEAD>
+<TITLE>Теория к лаб. работе N 2</TITLE>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1251">
+<link REL="stylesheet" TYPE="text/css" HREF="mstyle.css">
+</HEAD>
+<BODY>
+<H3>Использование шрифтов в HTML-документе</H3>
+<P>
+При стандартном просмотре документа через броузер как правило используются
+два семейства графических шрифтов: это <b>пропорциональный шрифт</b>
+(обычно <i>Times Roman</i>) и <b>равноширинный шрифт</b>
+(обычно <i>Courier</i>).
+Броузеры могут использовать
+и другие шрифты, установленные в системе.
+Считается стандартным, использование в качестве дополнительного
+шрифта третьего семейства шрифтов, которое называется <b>шрифт без
+надсечек</b> (обычно <i>Arial</i>). Принципиально допускается
+использование любого семейства шрифтов, если вам известно его
+имя на пользовательской машине.
+
+<h3>Команда &lt;FONT&gt;</h3>
+<p>Команда
+<A HREF="html-gloss.html#htmlref2_0001000113001e00" TARGET="contentFrame">FONT</A>
+задает цвет, размер и вид семейства шрифтов.
+<p>
+<b>Цвет шрифта</b><br>
+Определяется <b>атрибутом</b>
+<A href="html-gloss.html#htmlref2_0001000113001e01">
+COLOR=</A> согласно правилам
+задания <a href="color.html#color">цветов в HTML-документе</a>.
+<p>
+<a name="size-font">
+<b>Размер шрифта</b><br>
+Определяется <b>атрибутом</b>
+<A href="html-gloss.html#htmlref2_0001000113001e03">SIZE=</A><I>n</I>.
+Размер может задаваться в абсолютным или относительным значением
+от <a href="#basefont">базового размера</a> шрифта в документе.
+<p>
+<B>Абсолютный размер</B><br>
+Число <I>n</I> при абсолютном задании размера может принимать значения
+от 1 до 7.
+<p><b>Пример</b>
+<p>
+<font size=1>size=1</font>
+<font size=2>size=2</font>
+<font size=3>size=3</font>
+<font size=4>size=4</font>
+<font size=5>size=5</font>
+<font size=6>size=6</font>
+<font size=7>size=7</font>
+<P>
+<B>Относительный размер</B><br>
+Число <I>n</I> при относительном задании размера может принимать значения
+от 1 до 7 со знаками плюс (+) - увеличение или минус (-) - уменьшение
+размера шрифта на <I>n</I> пунктов по отношению к
+<a href="#basefont">базовому размеру</a> шрифта в документе.
+По умолчанию базовый размер шрифта в документе считается равны 3 в абсолютных значения.
+<p><b>Пример</b><br>
+Относительное изменение размера шрифта при стандартном значении базового
+размера шрифта в документе (<I>n=3</I>).
+<p>
+<font size=-4>size=-4</font>
+<font size=-3>size=-3</font>
+<font size=-2>size=-2</font>
+<font size=-1>size=-1</font>
+<font size=+1>size=+1</font>
+<font size=+2>size=+2</font>
+<font size=+3>size=+3</font>
+<font size=+4>size=+4</font>
+<p><b>Пример</b><br>
+Относительное изменение размера шрифта при значении базового
+размера шрифта в документе <I>n=6</I>.
+<p><basefont size=6>
+<font size=-4>size=-4</font>
+<font size=-3>size=-3</font>
+<font size=-2>size=-2</font>
+<font size=-1>size=-1</font>
+<font size=+1>size=+1</font>
+<font size=+2>size=+2</font>
+<font size=+3>size=+3</font>
+<font size=+4>size=+4</font>
+
+<P><basefont size=3>
+<a name="name">
+<b>Семейства шрифтов</b><br>
+Имя семейства шрифтов определяется <b>атрибутом</b>
+<A HREF="html-gloss.html#htmlref2_0001000113001e02" TARGET="contentFrame">FACE=</A>
+команды
+<A HREF="html-gloss.html#htmlref2_0001000113001e00" TARGET="contentFrame">FONT</A>
+или <b>атрибутом</b> NAME= команды
+<A HREF="html-gloss.html#htmlref2_0001000113000900" TARGET="contentFrame"> BASEFONT</A>. (см. <a href="#basefont">Базовое задание шрифта</a>).
+Стандартные значения этого <b>атрибута</b>:
+<b>"Times New Roman"</b> (пропорциональный шрифт), <b>"Courier New"</b>
+(равноширинный шрифт) и <b>"Arial"</b> (шрифт без надсечек).
+Имена семейств шрифтов в настоящий момент пока не стандартизованы и
+в разных системах могут называться по разному. Например, семейство
+шрифтов, которое используется по умолчанию для пропорционального
+шрифта <b>"Times New Roman"</b>, может называться
+<b>"Times"</b>, <b>"Times Roman"</b>,
+<b>"Roman"</b> и т.д.
+<p>
+<b>Пример</b><br>
+Установка шрифта "Arial":
+<table><tr><td bgcolor=aqua>
+<PRE>&lt;FONT FACE="Arial"&gt;Welcome to WWW!&lt;/FONT&gt;</PRE></table>
+<br><b>Что даст:</b>
+<FONT FACE="ARIAL">Welcome to WWW!</FONT>
+
+<p>Установка шрифта "Courier New":
+<table><tr><td bgcolor=aqua>
+<PRE>&lt;FONT FACE="Courier New"&gt;Welcome to WWW!&lt;/FONT&gt;</PRE></table>
+<br><b>Что даст:</b>
+<FONT FACE="Courier New">Welcome to WWW!</FONT>
+
+<P>
+Семейство шрифтов <b>"Arial"</b> может отсутствовать
+на конкретной машине пользователя, поэтому для задания <b>шрифта без
+надсечек</b> рекомендуется использовать несколько
+подходящих для этих целей имен, например,
+<b> "Arial", "Lucida Sans"</b>, или  <b>"Helvetica"</b>.
+Кстати, если просмотрщик не находит нужного шрифта, то использует,
+заданный по умолчанию  пропорциональный шрифт, как правило,
+<b>"Times Roman"</b>.
+<p><b>Пример</b><br>
+Установка шрифта "Arial":
+<table><tr><td bgcolor=aqua>
+<PRE>&lt;FONT FACE="Arial,Lucida Sans,Helvetica"&gt;Данный текст выводится
+либо шрифтом Arial, либо Lucida Sans, или Helvetica, или Times Roman,
+в зависимости от наличия шрифтов, установленных в системе.&lt;/FONT&gt;
+</PRE></table>
+<p>
+<a name="basefont">
+<h3>Базовое задание шрифта</h3>
+Команда
+<A HREF="html-gloss.html#htmlref2_0001000113000900" TARGET="contentFrame"> BASEFONT</A>
+определяет (или изменяет) базовый шрифт документа.
+<p>
+<b>Атрибуты</b>
+<ul>
+<li>Размер шрифта
+<a href="html-gloss.html#htmlref2_0001000113000903">SIZE=</A><I>n</I>.
+Число <I>n</I>  может принимать значения от 1 до 7.
+<li>Цвет шрифта
+<a href="html-gloss.html#htmlref2_0001000113000901">COLOR=</A>
+<a href="color.html#color"><I>цвет</I></a>
+<li>Имя шрифта
+<a href="html-gloss.html#htmlref2_0001000113000902">NAME=</B></A><I>name</I>
+</ul>
+<table><tr><td bgcolor=aqua>
+<PRE>&lt;BASEFONT SIZE=3&gt; This sets the base font size to 3.
+&lt;FONT SIZE="+4"&gt; Now the font size is 7.
+&lt;FONT SIZE="-1"&gt; Now the font size is 2.
+</PRE></table>
+
+<H3>Списки и перечисления</H3>
+<UL>
+<LI><a href="#ul">Ненумерованный список (Bulleted Lists)<a>
+<LI><a href="#ol">Нумерованный (упорядоченный) список (Ordered Lists)</a>
+<LI><a href="#def-data">Список определений (Definition Lists)</a>
+</UL>
+
+<P>
+язык HTML имеет команды создания различных списков и перечислений:
+<A HREF="html-gloss.html#htmlref2_0001000113005100" TARGET="contentFrame">UL (Unodered List)</A>,
+<A HREF="html-gloss.html#htmlref2_0001000113003600" TARGET="contentFrame">OL (Odered List)</A>,
+<A HREF="html-gloss.html#htmlref2_0001000113003100" TARGET="contentFrame">MENU</A>,
+<A HREF="html-gloss.html#htmlref2_0001000113001800" TARGET="contentFrame">DIR</A> и
+<A HREF="html-gloss.html#htmlref2_0001000113001a00" TARGET="contentFrame">DL (Definition List)</A>.
+<P>Элементы списка (item's) отмечаются командой
+<A HREF="html-gloss.html#htmlref2_0001000113002c00" TARGET="contentFrame">LI (List Item)</A>.
+Допускаются вложенные списки любой глубины.
+
+<P><a name="ul">
+<h3>Ненумерованный список</h3></a>
+<P>В качестве примера, задания ненумерованного списка (<i>unodered list</i> or
+<i> bulleted list</i>) и использования команд
+<A HREF="html-gloss.html#htmlref2_0001000113005100" TARGET="contentFrame">UL</A> и
+<A HREF="html-gloss.html#htmlref2_0001000113002c00" TARGET="contentFrame">LI</A>,
+рассмотрим:
+<P><table><tr><td bgcolor=aqua>
+<PRE>&lt;UL&gt;
+  &lt;LI&gt;Ненумерованный список (Bulleted Lists)
+  &lt;LI&gt;Нумерованный (упорядоченный) список (Ordered Lists)
+  &lt;LI&gt;Список описаний (Directory Lists)
+  &lt;LI&gt;Список обозначений (Itemized Lists)
+  &lt;LI&gt;Список определений (Definition Lists)
+&lt;/UL&gt;
+</PRE></TABLE>
+<P>даст:
+<P><UL>
+<LI>Ненумерованный список (Bulleted Lists)
+<LI>Нумерованный (упорядоченный) список (Ordered Lists)
+<LI>Список описаний (Directory Lists)
+<LI>Список обозначений (Itemized Lists)
+<LI>Список определений (Definition Lists)
+</UL>
+<P>Для ненумерованного списка дополнительно может использоваться
+атрибут <b>TYPE=</b>:
+<BLOCKQUOTE>
+TYPE=disc - темный кружок<br>
+TYPE=circle - светлый кружок<br>
+TYPE=square - темный квадратик
+</BLOCKQUOTE>
+
+<BR CLEAR=ALL>
+
+<P><a name="ol">
+<h3>Нумерованный список</h3></a>
+<P>Используя
+<A HREF="html-gloss.html#htmlref2_0001000113003600" TARGET="contentFrame">OL</A> и
+<A HREF="html-gloss.html#htmlref2_0001000113002c00" TARGET="contentFrame">LI</A>
+получим нумерованный список:
+<P><table><tr><td bgcolor=aqua><PRE>&lt;OL&gt;
+  &lt;LI&gt;Шаг первый.
+  &lt;LI&gt;Шаг второй.
+  &lt;LI&gt;Шаг третий.
+&lt;/OL&gt;
+</PRE></table>
+<P>который даст:
+<P><OL>
+<LI>Шаг первый.
+<LI>Шаг второй.
+<LI>Шаг третий.
+</OL>
+<P>По умолчанию нумерация дается арабскими цифрами, начиная с единицы.
+<P>Используя атрибуты команды
+<A HREF="html-gloss.html#htmlref2_0001000113003600" TARGET="contentFrame">OL</A>
+можно изменить стиль оформления списка.
+Атрибут
+<A HREF="html-gloss.html#htmlref2_0001000113003602" TARGET="contentFrame">TYPE=</A>
+определяет стиль нумерации (буквы или цифры):
+<p>
+<b>TYPE</b>=<i>order-type</i>
+<BLOCKQUOTE>
+<i>order-type</i>=A  - использовать большие буквы (латинские);<BR>
+<i>order-type</i>=a  - использовать маленькие буквы;<BR>
+<i>order-type</i>=I  - использовать большие римские цифры;<BR>
+<i>order-type</i>=i  - использовать маленькие римские цифры;<BR>
+<i>order-type</i>=1  - использовать арабские цифры;<BR>
+</BLOCKQUOTE>
+Атрибут <A HREF="html-gloss.html#htmlref2_0001000113003601" TARGET="contentFrame">START=</A>
+определяет начальное значение списка (десятичное число)<BR>
+<b>START</b>=<i>n</i>
+<BR CLEAR=ALL>
+
+<h4>Пример вложенного списка</h4>
+<P>Рассмотрим следующий вложенный список:
+<P><table><tr><td bgcolor=aqua><PRE>&lt;OL&gt;
+&lt;LI&gt;Шаг первый.
+ &lt;UL&gt;
+ &lt;LI&gt;Второй список раз
+   &lt;UL&gt;
+   &lt;LI&gt;Третий список раз
+   &lt;LI&gt;Третий список два
+   &lt;LI&gt;Третий список три
+   &lt;/UL&gt;
+ &lt;LI&gt;Второй список два
+   &lt;OL TYPE=i START=3&gt;
+   &lt;LI&gt;Третий список римский раз
+   &lt;LI&gt;Третий список римский два
+   &lt;LI&gt;Третий список римский три
+   &lt;/OL&gt;
+ &lt;LI&gt;Второй список три
+ &lt;/UL&gt;
+&lt;LI&gt;Шаг второй.
+&lt;LI&gt;Шаг третий.
+&lt;/OL&gt;
+</PRE></table>
+<P><b>что даст:</b>
+<OL>
+<LI>Шаг первый.
+<UL>
+<LI>Второй список раз
+<UL>
+<LI>Третий список раз
+<LI>Третий список два
+<LI>Третий список три
+</UL>
+<LI>Второй список два
+<OL TYPE=i START=3>
+<LI>Третий список римский раз
+<LI>Третий список римский два
+<LI>Третий список римский три
+</OL>
+<LI>Второй список три
+</UL>
+<LI>Шаг второй.
+<LI>Шаг третий.
+</OL>
+<P>
+<BR CLEAR=ALL>
+<P><a name="def-data">
+<h3>Список определений</h3></a>
+<P>Список определений задается командами
+<A HREF="html-gloss.html#htmlref2_0001000113001a00" TARGET="contentFrame">DL</A>,
+<A HREF="html-gloss.html#htmlref2_0001000113001b00" TARGET="contentFrame">DT</A> и
+<A HREF="html-gloss.html#htmlref2_0001000113001600" TARGET="contentFrame">DD</A>.<br>
+<P>Следующий пример показывает использование списка определений:
+<P><table><tr><td bgcolor=aqua><PRE>&lt;DL&gt;
+&lt;DT&gt;Кошка
+&lt;DD&gt;Маленькое хищное животное.
+&lt;DT&gt;Крокодил
+&lt;DD&gt;Большая рептилия.
+&lt;/DL&gt;
+</PRE></table>
+<P><b>Что даст:</b>
+<DL>
+<DT>Кошка
+<DD>Маленькое хищное животное.
+<DT>Крокодил
+<DD>Большая рептилия.
+</DL>
+
+<H3>Гиперссылки</H3>
+<P>
+Связь между документами и отдельными частями документов осуществляется через соответствующие гиперссылки. Команда
+<a href="html-gloss.html#htmlref2_0001000113000300"><tt><b>&lt;A&gt;</b></tt></a>
+(anchor - якорь) задает гиперссылку на другой документ или на определенное место в документе. Когда браузер выводит на экран текст, содержащийся между тегами &lt;A&gt; и &lt;/A&gt;, он обычно выделяет его другим цветом.
+Если же гиперссылкой является графический файл, то на экране вокруг картинки может быть изображена цветная рамка (если атрибут border не равен 0).
+
+<P> Атрибуты команды 
+<A HREF="html-gloss.html#htmlref2_0001000113000d00" TARGET="contentFrame">BODY</A></b>
+позволяют определить цвет, которым обозначаются непосещенные (LINK),
+непосещенные (VLINK) и активные (ALINK) гиперссылки в документе.
+
+<P>Пример использования атрибутов:
+<br><table><tr><td bgcolor=aqua>
+<pre>
+&lt;BODY BACKGROUND="bgpicture.gif" BGCOLOR="white"
+      TEXT="gray" LINK="blue" VLINK="yellow" ALINK="red"&gt;
+</pre></table>
+
+<p>Здесь
+<br><tt>BACKGROUND</tt> - название файла, используемого в качестве фонового рисунка
+<br><tt>BGCOLOR</tt> - цвет фона (белый)
+<br><tt>TEXT</tt>  - цвет текста (серый)
+<br><tt>LINK</tt> - цвет непосещенной гиперссылки (синий)
+<br><tt>VLINK</tt> - цвет посещенной гиперссылки (желтый)
+<br><tt>ALINK</tt> - цвет активной гиперссылки (красный)
+
+<P><B>Примеры</B>
+<P><table><tr><td bgcolor=aqua><tt>&lt;A HREF="http://www.company.com"&gt;Это 
+адрес компании.&lt;/A&gt;</tt></table>
+
+<P><table><tr><td bgcolor=aqua><tt>&lt;A HREF="home.html"&gt;На главную 
+страницу&lt;/A&gt;</tt></table> -&nbsp;ссылка 
+на файл home.html в той же директории.
+
+<P><table><tr><td bgcolor=aqua><tt>&lt;A NAME="info"&gt;Информация&lt;/A&gt;
+</tt></table> -&nbsp; создание метки info.
+  
+<P><table><tr><td bgcolor=aqua><tt>Посмотрите в разделе &lt;A HREF="#info"&gt;Информация&lt;/A&gt;
+</tt></table> -&nbsp;переход на место в файле с меткой info.
+</PRE></table>
+
+<p><table><tr><td bgcolor=aqua>
+<tt>&lt;A HREF="mailto:www@ict.nsc.ru"&gt;www@ict.nsc.ru&lt;/a&gt;</tt></table>
+ -&nbsp;задание адреса электронной почты для автоматической отправки сообщения
+через броузер.
+
+
+<H3>Адрес URL</H3>
+Система адресации и собственно сами адреса в HTML документах называются URL.
+Что такое URL?  URL - это аббревиатура от  <b>Uniform Resource Locator</b>.
+Адрес URL является сетевым расширением понятия полного имени файла в операционной системе
+(пути к файлу).
+<p> <table><tr><td bgcolor=aqua>
+<PRE>http://www.ict.nsc.ru/win/docs/html/url.html</PRE>
+</table>
+В этой адресации кроме имени файла <tt>"url.html"</tt> и директории, <tt>"/win/docs/html/"</tt>  где он находится указывается сетевое имя машины <tt>"www.ict.nsc.ru"</tt>,
+на которой этот файл расположен и 
+метод доступа к файлу <tt>"http"</tt>, который можно использовать для его просмотра или загрузки.
+
+<H3>HTTP URL</H3>
+<p> HTTP - HyperText Transport Protocol
+(протокол передачи гипертекста).
+HTTP-сервера обычно используются для предоставления гипертекстовых
+документов. Такие документы, в отличие от обычных, имеют ссылки на
+другие документы (не обязательно расположенных на этом же сервере) и состоят
+из текста, графики, звуков, анимации.
+<P>
+Для вызова документа  <tt>"url.html"</tt>,  который находится в
+директории <tt>/win/docs/html/</tt> WWW сервера
+<tt>www.ict.nsc.ru</tt> необходим следующий URL адрес:
+<p><table><tr><td bgcolor=aqua>
+<PRE>http://www.ict.nsc.ru/win/docs/html/url.html</PRE></table>
+<P>
+По умолчанию все программы по протоколу HTTP ищут WWW сервер на 80 порту,
+но можно и явно указать порт (также как и в gopher'e).
+<p><table><tr><td bgcolor=aqua>
+<PRE>http://www.weblab.com:1234/pub/files/foobar.html</PRE></table>
+
+<H3>Частичные URL</H3>
+Частичные URL используются только протоколом передачи гипертекста
+(HTTP).
+Если вы внимательно посмотрите на исходники какого-нибудь гипертекстового
+документа и обратите внимание на то, как указаны ссылки на другие URL,
+то заметите, что встречаются два вида:
+<p>
+<table><tr><td bgcolor=aqua>
+<pre>&lt;A HREF="http://www.w3c.net/WWW/url.html"&gt;URL&lt;/A&gt;</pre>
+
+<p>
+<pre>&lt;A HREF="docs.html"&gt;Документация&lt;/A&gt;</pre>
+</table>
+<p>
+Первый пример - это полный URL, а второй - частичный. Частичный
+URL указывает на документ, который находится на том же сервере и
+в той же директории, где и документ, в котором встречается эта ссылка.
+Так, например, если документ, где вы нашли эти две строчки,
+имел URL
+<tt>http://www.w3c.net/WWW/foo.html</tt>, то полный
+URL у второго частичного должен выглядеть как
+<tt>http://www.w3c.net/WWW/docs.html</tt>.
+<p>
+Сокращенные URL адреса определяются по правилам, принятым в операционной системе
+ UNIX:
+<p>адрес  "<tt>my/file-1.html</tt>"  означает переход в поддиректорию 
+<tt>my</tt> относительно директории того файла, в котором стоит гиперссылка 
+на файл <nobr><tt>file-1.html</tt></nobr>.
+
+<p>адрес  "<tt>../win/file-2.html</tt>"  означает переход на
+одну директорию вверх и выбор файла с именем <nobr><tt>file-2.html</tt></nobr> 
+из поддиректории <tt>win</tt>. 
+
+<p>адрес  "<tt>/docs/ball.gif</tt>" - это переход в корневую директорию и выбор файла с полным именем
+<tt>www.w3c.net/docs/ball.gif</tt>.
+
+
+
+</BODY></HTML>
+

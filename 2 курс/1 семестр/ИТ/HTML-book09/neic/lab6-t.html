@@ -1,0 +1,80 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//RU">
+<HTML>
+<HEAD>
+<TITLE>Теория к лаб. работе N 6</TITLE>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<link REL="stylesheet" TYPE="text/css" HREF="mstyle.css" tppabs="http://pmk.neic.nsk.su/book-html/HTML/mstyle.css">
+</HEAD>
+<BODY LEFTMARGIN=8 BGCOLOR="#FFFFFF" VLINK="#666666" LINK="#FF0000">
+
+<h3>Гиперссылки и активные рисунки</h3>
+<P>
+Картинка может быть средством задания и управления выбором гиперссылок
+в HTML документе.
+В этом случае на команду
+<A HREF="html-gloss.html#htmlref2_0001000113002800" tppabs="http://pmk.neic.nsk.su/book-html/HTML/html-gloss.html#htmlref2_0001000113002800" TARGET="contentFrame">IMG</A>
+должна указывать гиперссылка, определяемая командой
+<A HREF="html-gloss.html#htmlref2_0001000113000300" tppabs="http://pmk.neic.nsk.su/book-html/HTML/html-gloss.html#htmlref2_0001000113000300" TARGET="contentFrame">A</A>.
+<p>
+По умолчанию броузер рисует рамку вокруг картинки, которая отмечена как
+гиперссылка. Вы можете убрать отрисовку рамки, использовав <b>атрибут</b>
+<A HREF="html-gloss.html#htmlref2_0001000113002803" tppabs="http://pmk.neic.nsk.su/book-html/HTML/html-gloss.html#htmlref2_0001000113002803" TARGET="contentFrame">BORDER=</A>
+в команде <A HREF="html-gloss.html#htmlref2_0001000113002800" tppabs="http://pmk.neic.nsk.su/book-html/HTML/html-gloss.html#htmlref2_0001000113002800" TARGET="contentFrame">IMG</A>
+с значением ноль.
+<p>
+Кроме этого вы имеете возможность создать "активную" (с гиперссылками) картинку,
+в которой разные части картинки имеют разные ссылки, что является достаточно
+мощным аппаратом навигации в WWW. 
+<P>
+Для задания информации о гиперссылках в рисунке, которая включается в HTML документ,
+используется <b>атрибут</b>
+<A HREF="html-gloss.html#htmlref2_000100011300280c" tppabs="http://pmk.neic.nsk.su/book-html/HTML/html-gloss.html#htmlref2_000100011300280c" TARGET="text">USEMAP=</A>
+в команде
+<A HREF="html-gloss.html#htmlref2_0001000113002800" tppabs="http://pmk.neic.nsk.su/book-html/HTML/html-gloss.html#htmlref2_0001000113002800" TARGET="text">IMG</A>.
+Сама информация о гиперссылках определяется командами
+<A HREF="html-gloss.html#htmlref2_0001000113002f00" tppabs="http://pmk.neic.nsk.su/book-html/HTML/html-gloss.html#htmlref2_0001000113002f00" TARGET="text">MAP</A> и
+<A HREF="html-gloss.html#htmlref2_0001000113000600" tppabs="http://pmk.neic.nsk.su/book-html/HTML/html-gloss.html#htmlref2_0001000113000600" TARGET="text">AREA</A>,
+как это показано ниже:
+<p><table><tr><td bgcolor=aqua>
+<PRE>&lt;MAP NAME="map1"&gt;
+&lt;AREA SHAPE="RECT" COORDS="0, 0, 16, 16" HREF="S1.html"&gt;
+&lt;AREA SHAPE="RECT" COORDS="16, 0, 16, 16" NOHREF&gt;
+&lt;AREA SHAPE="RECT" COORDS="0, 16, 16, 16" HREF="S2.html"&gt;
+&lt;AREA SHAPE="RECT" COORDS="16, 16, 16, 16" HREF="S3.html"&gt;
+&lt;AREA SHAPE=default HREF="other.html"&gt;
+&lt;/MAP&gt;
+&lt;IMG BORDER=0 SRC="map1.gif" USEMAP="#map1"&gt;</PRE>
+</table>
+<p>
+Чтобы увидеть <b>пример</b> работы активной картинки
+<a href="javascript:if(confirm('http://pmk.neic.nsk.su/book-html/HTML/Example/activ-img-map.html  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?'))window.location='http://pmk.neic.nsk.su/book-html/HTML/Example/activ-img-map.html'" tppabs="http://pmk.neic.nsk.su/book-html/HTML/Example/activ-img-map.html" target="new">нажми здесь</a>.
+<P>
+В этом примере картика была размечена равными прямоугольниками (rectangular areas).
+Одна область является непомеченной, остальные три помечены документами &nbsp;
+<TT>S1.html, S2.html, S3.html</TT> &nbsp; соответсвенно.
+<P>
+Команда
+<A HREF="html-gloss.html#htmlref2_0001000113000600" tppabs="http://pmk.neic.nsk.su/book-html/HTML/html-gloss.html#htmlref2_0001000113000600" TARGET="text">AREA</A>
+позволяет также помечать области окружностями (CIRCLES) и многоугольниками (POLYGONS).
+
+<P>Атрибут COORDS задает список координат: 
+<ul>
+<li>для прямоугольной области это x,y-координаты левого верхнего и правого нижнего углов, 
+<li>для многоугольной - x,y-координаты каждого из углов, 
+<li>для окружности - x,y-координаты центра и радиус.
+</ul>
+<P>
+Если две или боле областей пересекаются, то броузер выбирает первую из
+тех, что описаны в команде
+<A HREF="html-gloss.html#htmlref2_0001000113002f00" tppabs="http://pmk.neic.nsk.su/book-html/HTML/html-gloss.html#htmlref2_0001000113002f00" TARGET="text">MAP</A>,
+непомеченные области никак не отвечают на вызов.
+<p>
+<b>Замечание</b><br>
+MS Internet Exporer не обрабатывет команду "ответ по умолчанию"
+несмотря на команду
+<pre>&lt;AREA SHAPE=default HREF="other.html"&gt;</pre>
+
+
+<p>&nbsp;
+
+</BODY></HTML>

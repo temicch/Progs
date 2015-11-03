@@ -1,0 +1,58 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 3.2//RU">
+<HTML><HEAD>
+<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=Windows-1251">
+<TITLE>Лабораторная 2.2</TITLE>
+
+<script language="JavaScript">
+var delay = 200, frame = 1;
+function button_start()
+{
+	timer = setTimeout('animation()', delay);
+}
+function button_pause()
+{
+	clearTimeout(timer);
+}
+function button_slow()
+{
+	delay += 40;
+}
+function button_fast()
+{
+	if(delay - 40 > 0)
+	delay -= 40;
+}
+function animation()
+{
+	if(frame == 1)	document.myImage1.src = "./HTML-book09/HTML/JAVA/works/lab2.2_files/s1.gif";
+	if(frame == 2)	document.myImage1.src = "./HTML-book09/HTML/JAVA/works/lab2.2_files/s2.gif";
+	if(frame == 3)	document.myImage1.src = "./HTML-book09/HTML/JAVA/works/lab2.2_files/s3.gif";
+	if(frame == 4)	document.myImage1.src = "./HTML-book09/HTML/JAVA/works/lab2.2_files/s4.gif";
+	if(frame == 5)	document.myImage1.src = "./HTML-book09/HTML/JAVA/works/lab2.2_files/s5.gif";
+	if(frame == 6)	document.myImage1.src = "./HTML-book09/HTML/JAVA/works/lab2.2_files/s6.gif";
+	if(frame == 7)	document.myImage1.src = "./HTML-book09/HTML/JAVA/works/lab2.2_files/s7.gif";
+	if(frame == 8)	document.myImage1.src = "./HTML-book09/HTML/JAVA/works/lab2.2_files/s8.gif";
+	if(frame == 9)	document.myImage1.src = "./HTML-book09/HTML/JAVA/works/lab2.2_files/s9.gif";
+	if(frame == 10)	document.myImage1.src = "./HTML-book09/HTML/JAVA/works/lab2.2_files/s10.gif";
+	if(frame == 11)	document.myImage1.src = "./HTML-book09/HTML/JAVA/works/lab2.2_files/s11.gif";
+	if(frame == 12)	document.myImage1.src = "./HTML-book09/HTML/JAVA/works/lab2.2_files/s12.gif";
+	frame++;
+	if(frame == 13) frame = 1;
+	
+}
+</script>
+
+
+</HEAD> 
+
+<BODY BGCOLOR="white" 
+ TEXT="black" LINK="blue" ALINK="red" VLINK="green">
+
+<p><img src=".\HTML-book09\HTML\JAVA\works\lab2.2_files\s1.gif" name="myImage1" onLoad="timer = setTimeout('animation()', delay)" border=0></p>
+<input type="button" value="Старт" onClick="button_start()">
+<input type="button" value="Пауза" onClick="button_pause()">
+<input type="button" value="Медленнее" onClick="button_slow()">
+<input type="button" value="Быстрее" onClick="button_fast()">
+</BODY>
+</HTML>
+

@@ -1,0 +1,53 @@
+<HTML><HEAD>
+<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=Windows-1251">
+<script>
+function f()
+{
+	pc=document.ff.pcs.value
+	fr=document.ff.frm.value
+ 
+	switch(pc)
+	{
+		case '1': w='r1.html'; break
+		case '2': w='r2.html'; break
+		case '3': w='r3.html'; break
+		case '4': w='r4.html'; break
+		default: break
+	}
+ 
+	switch(fr)
+	{
+		case '1': window.open(w,'w1'); break
+		case '2': window.open(w,'w2'); break
+		case '3': window.open(w,'w3'); break
+		case '4': window.open(w,'w4'); break
+		default: break
+	}
+}
+
+</script></HEAD> 
+<body>
+
+<form name="ff">
+<H1><b>Выберите элемент:</b></H1>
+<p>Номер картинки</p>
+ <SELECT name="pcs">
+   <OPTION VALUE="1" SELECTED> 1
+   <OPTION VALUE="2"> 2
+   <OPTION VALUE="3"> 3
+   <OPTION VALUE="4"> 4
+ </SELECT>
+<p>Номер фрейма</p>
+ <SELECT name="frm">
+   <OPTION VALUE="1" SELECTED> 1
+   <OPTION VALUE="2"> 2
+   <OPTION VALUE="3"> 3
+   <OPTION VALUE="4"> 4
+ </SELECT>
+ <p>
+ <INPUT TYPE="button" VALUE="Сопоставить" onclick="f()">
+ </p>
+</form>
+
+</body>
+</HTML>

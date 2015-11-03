@@ -1,0 +1,75 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 3.2//RU">
+<HTML><HEAD>
+<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=Windows-1251">
+<script>
+function ResetOptionList(ElementValue)
+{
+	with(document.forms.Contact)
+	{
+		if (ElementValue=='1')
+		{	
+			OptionList[0].text = 'Honda Shadow Aero';
+			OptionList[1].text = 'Honda CBR500R';
+			OptionList[2].text = 'Yamaha V-Star 1300';
+			OptionList[3].text = 'Yamaha BOLT';
+		}
+		else
+		if (ElementValue=='0')
+		{	
+			OptionList[0].text = 'Lamborghini Murcielago';
+			OptionList[1].text = 'Chevrolet Impala ';
+			OptionList[2].text = 'Ford Mustang 1969';
+			OptionList[3].text = 'Chevrolet Camaro';
+		}
+	}
+}
+
+function f()
+{
+	v=document.forms.Contact.vehicles.value
+	n=document.forms.Contact.OptionList.value 
+	if (v=='1') //moto
+	switch(n)
+	{
+		case '1': window.open('./1.3/shadow.html','2.2'); break
+		case '2': window.open('./1.3/honda.html','2.2'); break
+		case '3': window.open('./1.3/star.html','2.2'); break
+		case '4': window.open('./1.3/bolt.html','2.2'); break
+		default: break
+	}
+	if (v=='0')
+	switch(n)
+	{
+		case '1': window.open('./1.3/lama.html','2.2'); break
+		case '2': window.open('./1.3/impala.html','2.2'); break
+		case '3': window.open('./1.3/mustang.html','2.2'); break
+		case '4': window.open('./1.3/camaro.html','2.2'); break
+		default: break
+	}
+
+}	
+
+</script></HEAD> 
+
+<form name="Contact">
+ <SELECT name="OptionList" size=4 width="600 px">
+   <OPTION VALUE="1" SELECTED> Honda Shadow Aero
+   <OPTION VALUE="2"> Honda CBR500R
+   <OPTION VALUE="3"> Yamaha V-Star 1300
+   <OPTION VALUE="4"> Yamaha BOLT
+ </SELECT>
+ <br>
+<input type="radio"
+	   name="vehicles" checked="true"
+	   value=1
+	   onClick="ResetOptionList('1');">Motorcycles
+<input type="radio"
+	   name="vehicles"
+	   value=0
+	   onClick="ResetOptionList('0');">Cars	   
+<br>	   
+<INPUT TYPE="button" VALUE="Показать" onclick="f()">
+</form>
+
+</HTML>
+

@@ -1,0 +1,84 @@
+﻿<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 3.2//RU">
+<HTML>
+<HEAD>
+<TITLE>Лабораторная работа 3.1</TITLE>
+</HEAD>
+
+
+<script language="JavaScript">
+var timer, delay = 1000;
+function hideall()
+{
+	for(i = 0; i < 12; i++)
+	{
+		document.getElementsByTagName('div')[3+i].style.display = "none";
+	}
+	clearTimeout(timer);
+}
+function menu1()
+{
+	hideall();
+	str1 = document.getElementsByTagName('div')[3];
+	str2 = document.getElementsByTagName('div')[4];
+	str3 = document.getElementsByTagName('div')[5];
+	str4 = document.getElementsByTagName('div')[6];
+	str1.style.display = "block";
+	str2.style.display = "block";
+	str3.style.display = "block";
+	str4.style.display = "block";
+}
+function menu2()
+{
+	hideall();
+	str1 = document.getElementsByTagName('div')[7];
+	str2 = document.getElementsByTagName('div')[8];
+	str3 = document.getElementsByTagName('div')[9];
+	str4 = document.getElementsByTagName('div')[10];
+	str1.style.display = "block";
+	str2.style.display = "block";
+	str3.style.display = "block";
+	str4.style.display = "block";
+}
+function menu3()
+{
+	hideall();
+	str1 = document.getElementsByTagName('div')[11];
+	str2 = document.getElementsByTagName('div')[12];
+	str3 = document.getElementsByTagName('div')[13];
+	str4 = document.getElementsByTagName('div')[14];
+	str1.style.display = "block";
+	str2.style.display = "block";
+	str3.style.display = "block";
+	str4.style.display = "block";
+}
+</script>
+
+<BODY onclick = "hideall();">
+
+
+<div onMouseOver = "menu1();" onmouseout = "clearTimeout(timer); timer = setTimeout('hideall()', delay)" style="background: green; position:absolute ; font-size:15px; z-index:0;color: white">Menu 1</div>
+<div onMouseOver = "menu2();" onmouseout = "clearTimeout(timer); timer = setTimeout('hideall()', delay)" style="background: green; position:absolute ; font-size:15px; left:55px; z-index:0;color: white">Menu 2</div>
+<div onMouseOver = "menu3();" onmouseout = "clearTimeout(timer); timer = setTimeout('hideall()', delay)" style="background: green; position:absolute ; font-size:15px; left:102px; z-index:0;color: white">Menu 3</div>
+
+
+
+
+<div onmouseover = "this.style.background = 'limegreen'; clearTimeout(timer); this.style.color = 'red'" onmouseout = "this.style.background = 'green'; clearTimeout(timer); timer = setTimeout('hideall()', delay); this.style.color = 'white'" style="background: green; position:absolute; display:none; font-size:15px; left:10px; top:27px; z-index:1;color: white">SubMenu1</div>
+<div onmouseover = "this.style.background = 'limegreen'; clearTimeout(timer); this.style.color = 'red'" onmouseout = "this.style.background = 'green'; clearTimeout(timer); timer = setTimeout('hideall()', delay); this.style.color = 'white'" style="background: green; position:absolute; display:none; font-size:15px; left:10px; top:44px; z-index:1;color: white">SubMenu2</div>
+<div onmouseover = "this.style.background = 'limegreen'; clearTimeout(timer); this.style.color = 'red'" onmouseout = "this.style.background = 'green'; clearTimeout(timer); timer = setTimeout('hideall()', delay); this.style.color = 'white'" style="background: green; position:absolute; display:none; font-size:15px; left:10px; top:61px; z-index:1;color: white">SubMenu3</div>
+<div onmouseover = "this.style.background = 'limegreen'; clearTimeout(timer); this.style.color = 'red'" onmouseout = "this.style.background = 'green'; clearTimeout(timer); timer = setTimeout('hideall()', delay); this.style.color = 'white'" style="background: green; position:absolute; display:none; font-size:15px; left:10px; top:78px; z-index:1;color: white">SubMenu4</div>
+
+
+<div onmouseover = "this.style.background = 'limegreen'; clearTimeout(timer); this.style.color = 'red'" onmouseout = "this.style.background = 'green'; clearTimeout(timer); timer = setTimeout('hideall()', delay); this.style.color = 'white'" style="background: green; position:absolute; display:none; font-size:15px; left:57; top:27px; z-index:1;color: white">SubMenu1</div>
+<div onmouseover = "this.style.background = 'limegreen'; clearTimeout(timer); this.style.color = 'red'" onmouseout = "this.style.background = 'green'; clearTimeout(timer); timer = setTimeout('hideall()', delay); this.style.color = 'white'" style="background: green; position:absolute; display:none; font-size:15px; left:57; top:44px; z-index:1;color: white">SubMenu2</div>
+<div onmouseover = "this.style.background = 'limegreen'; clearTimeout(timer); this.style.color = 'red'" onmouseout = "this.style.background = 'green'; clearTimeout(timer); timer = setTimeout('hideall()', delay); this.style.color = 'white'" style="background: green; position:absolute; display:none; font-size:15px; left:57; top:61px; z-index:1;color: white">SubMenu3</div>
+<div onmouseover = "this.style.background = 'limegreen'; clearTimeout(timer); this.style.color = 'red'" onmouseout = "this.style.background = 'green'; clearTimeout(timer); timer = setTimeout('hideall()', delay); this.style.color = 'white'" style="background: green; position:absolute; display:none; font-size:15px; left:57; top:78px; z-index:1;color: white">SubMenu4</div>
+
+
+<div onmouseover = "this.style.background = 'limegreen'; clearTimeout(timer); this.style.color = 'red'" onmouseout = "this.style.background = 'green'; clearTimeout(timer); timer = setTimeout('hideall()', delay); this.style.color = 'white'" style="background: green; position:absolute; display:none; font-size:15px; left:104; top:27px; z-index:1;color: white">SubMenu1</div>
+<div onmouseover = "this.style.background = 'limegreen'; clearTimeout(timer); this.style.color = 'red'" onmouseout = "this.style.background = 'green'; clearTimeout(timer); timer = setTimeout('hideall()', delay); this.style.color = 'white'" style="background: green; position:absolute; display:none; font-size:15px; left:104; top:44px; z-index:1;color: white">SubMenu2</div>
+<div onmouseover = "this.style.background = 'limegreen'; clearTimeout(timer); this.style.color = 'red'" onmouseout = "this.style.background = 'green'; clearTimeout(timer); timer = setTimeout('hideall()', delay); this.style.color = 'white'" style="background: green; position:absolute; display:none; font-size:15px; left:104; top:61px; z-index:1;color: white">SubMenu3</div>
+<div onmouseover = "this.style.background = 'limegreen'; clearTimeout(timer); this.style.color = 'red'" onmouseout = "this.style.background = 'green'; clearTimeout(timer); timer = setTimeout('hideall()', delay); this.style.color = 'white'" style="background: green; position:absolute; display:none; font-size:15px; left:104; top:78px; z-index:1;color: white">SubMenu4</div>
+
+
+</BODY></HTML>

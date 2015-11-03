@@ -1,0 +1,35 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//RU">
+<HTML>
+<HEAD>
+<TITLE>Теория к лаб. работе N 2.8</TITLE>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1251">
+<link REL="stylesheet" TYPE="text/css" HREF="mstyle.css">
+</HEAD>
+<BODY LEFTMARGIN=8 BGCOLOR="#FFFFFF" VLINK="#666666" LINK="#FF0000">
+<P><h2><a name="hreplace">Метод replace</a></h2>
+
+<pre class="syntax"><strong><a name="mreplace">Синтаксис</a></strong>: <em>объект</em>.replace(<em>регвыр</em>,<em>строка</em>)
+           <em>объект</em>.replace(<em>регвыр</em>,<em>функция</em>)
+
+<strong>Аргументы</strong>: <em>регвыр</em>&nbsp;&#151; регулярное выражение
+           строка&nbsp;&#151; строковое выражение
+           <em>функция</em>&nbsp;&#151; имя функции или декларация функции
+<strong>Результат</strong>: новая строка</pre>
+
+<p>Метод <strong>replace</strong> сопоставляет регулярное выражение 
+<em>регвыр</em> с примитивным
+значением строкового <em>объекта</em> и 
+заменяет найденные подстроки другими подстроками. 
+Результатом является новая строка, которая является копией исходной 
+строки с проведенными заменами. Способ замены определяется опцией глобального поиска в <em>регвыр</em>
+ и типом второго аргумента.</p>
+
+<p>В простейшем случае, данный метод позволяет заменить один символ на другой.</p>
+
+<table><tr><td bgcolor=aqua><pre>
+var str = "строка1";
+var n = str.length - 1;
+var str2 = str.replace(str.charAt(n), "");</pre></td></tr></table><br>
+
+Даный пример удаляет последний символ строки str.
+</body></html>

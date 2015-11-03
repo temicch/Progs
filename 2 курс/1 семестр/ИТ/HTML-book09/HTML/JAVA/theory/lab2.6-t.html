@@ -1,0 +1,135 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//RU">
+<HTML>
+<HEAD>
+<TITLE>Теория к лаб. работе N 2.6</TITLE>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1251">
+<link REL="stylesheet" TYPE="text/css" HREF="mstyle.css">
+</HEAD>
+<BODY LEFTMARGIN=8 BGCOLOR="#FFFFFF" VLINK="#666666" LINK="#FF0000">
+<h2>Объект Document</h2>
+Объект <b>document</b> содержит внутри себя множество подчиненных объектов и коллекций. В следующей таблице перечисленны свойства, возвращающие ссылки на них, и приведены описания соответствующих объектов и коллекций.
+</p>
+<ul><li>all - Все элементы страницы, включая теги &lt;HTML&gt;, &lt;HEAD&gt;, &lt;TITLE&gt; и &lt;BODY&gt;. 
+
+</li><li>anchors - Все "якоря" страницы
+</li><li>applets - Все Java-апплеты, изображения и элементы ActiveX
+</li><li>embeds - Все расширения, внедренные в страницу.
+</li><li>forms - Все Web-формы.
+</li><li>frames - Все фреймы набора фреймов. Как свойство объекта document поддерживается только IE.
+</li><li>images - Все изображения на странице.
+</li><li>layers - Все слои страницы. 
+</li><li>links - Все гиперссылки на странице. В случае NN также все "горячие" области &lt;AREA&gt;.
+</li><li>location - Объект location для данного документа. Как свойство объекта document поддерживается только IE.
+</li><li>scripts - Все скрипты, внедренные в страницу. Поддерживается только IE начиная с 4.0
+</li><li>selection - Объект selection, представляющий выделенный пользователем на странице текст. Поддерживается только IE начиная с 4.0 В NN используется метод getSelection.
+</li><li>styleSheets - Все таблицы стилей встроенные или привязанные к странице. Поддерживается только IE начиная с 4.0
+</li></ul>
+<p>Коллекция <i>all</i> имеет дополнительный метод <i>tags</i>, позволяющий фильтровать элементы коллекции по их тегу. В качестве параметра этот метод принимает строковое значение нужного тега.
+
+</p>
+
+<table><tr><td bgcolor=aqua>
+<pre>document.all.tags(&quot;H1&quot;)</pre></td></tr></table>
+<p>Данное выражение вернет ссылку на коллекцию, содержащую только заголовки первого уровня.
+</p><p>Такой же метод поддерживает коллекция <i>links</i>.
+</p><p>Также хочу упомянуть два метода, поддерживаемых Internet Explorer начиная с 5.0. Это методы <i>getElementByName</i> и <i>getElementByTagName</i>. Первый из них возвращает коллекцию элементов со значением атрубута <i>NAME</i>, переданным в качестве параметра. Поскольку атрибут <i>NAME</i> применяется в современном HTML очень редко, польза от этого метода невелика. Второй метод возвращает коллекцию элементов, созданных посредством тега, переданного в качестве параметра.
+
+</p><table><tr><td bgcolor=aqua>
+<pre>
+document.getElementsByName(&quot;someimage&quot;)
+document.getElementsByTagName(&quot;H1&quot;)</pre></td></tr></table>
+
+
+<table id="toc" class="toc" summary="Содержание"><tr><td><div id="toctitle"><h3>Методы объекта Document</h2></div>
+<ul>
+<li><a href="#clear.28.29">1 clear()  </a></li>
+<li><a href="#close.28.29">2 close()  </a></li>
+<li><a href="#createElement.28.29">3 createAttribute()  </a></li>
+
+<li><a href="#setAttributeNode">4 setAttributeNode  </a></li>
+<li><a href="#createElement.28.29">5 createElement()  </a></li>
+<li><a href="#elementFromPoint.28.29">6 elementFromPoint()  </a></li>
+<li><a href="#getElementById.28.29">7 getElementById()  </a></li>
+<li><a href="#getSelection.28.29">8 getSelection()  </a></li>
+
+<li   ><a href="#write.28.29">  9 write()  </a></li>
+<li   ><a href="#writeLn.28.29">  10 writeLn()  </a></li>
+</ul>
+</td></tr></table><script type="text/javascript"> if (window.showTocToggle) { var tocShowText = "показать"; var tocHideText = "убрать"; showTocToggle(); } </script>
+<a name="clear.28.29"></a><h3> clear()  </h2>
+
+<p>Этот метод предназначен для очистки текущего документа из окна браузера.
+</p>
+<ul><li>Возвращаемое значение: отсутствует
+</li><li>Совместимость:IE начиная с 3.02, NN начиная с 2.0
+</li></ul>
+<a name="close.28.29"></a><h3> close()  </h2>
+<p>Заставляет Web-страницу немедленно обновить свое содержимое после использования методов write. Метод не принимает параметров и не возвращает значения.
+</p>
+<ul><li>Возвращает: нет
+</li><li>Совместимость:IE начиная с 4.0, NN начиная с 2.0
+</li></ul>
+<a name="createAttribute.28.29"></a><h3> createAttribute()  </h2>
+
+</p><table><tr><td bgcolor=aqua>
+<pre>createAttribute( &quot;Имя Атрибута&quot; )</pre></td></tr></tablE>
+<p>Генерирует объект атрибута и возвращает ссылку на него. При вызове метода указывается только название атрибута, таким образом, в сценарии назначается значение свойству nodeValue, а затем новый атрибур добавляется в существующий элемент с помощью метода *Возвращает: ссылка на объект атрибута
+</p>
+<a name="setAttributeNode"></a><h3> setAttributeNode  </h2>
+
+</p><table><tr><td bgcolor=aqua><pre>var newAttr = document.createAttribute(&quot;width&quot;);
+newAttr.nodeValue = &quot;80%&quot;;
+document.getElementById(&quot;myTable&quot;).setAttributeNode(newAttr);
+
+</pre></td></tr></table>
+<ul><li>Совместимость:NN начиная с 6.0
+</li></ul>
+<a name="createElement.28.29"></a><h3> createElement()  </h2>
+
+</p><table><tr><td bgcolor=aqua><pre>createElement( &quot;Имя дескриптора&quot; )</pre></td></tr></table>
+<p>Генерирует объект атрибута для любого дескриптора HTML(или XML), указанного в качастве параметра. Этот объект официально не является частью объектной модели текущего документа, так как он в состав документа пока ещё не входит. Но данный метод используется для вызова объекта элемента, который в конечном счёте будет помещён в документ.
+</p>
+<ul><li>Возвращает: ссылка на объект атрибута
+
+</li><li>Совместимость:IE начиная с 4.0, NN начиная с 6.0
+</li></ul>
+<a name="elementFromPoint.28.29"></a><h3> elementFromPoint()  </h2>
+
+</p><table><tr><td bgcolor=aqua><pre>elementFromPoint({X}, {Y})</pre></td></tr></table>
+<p>Возвращает ссылку на элемент, находящийся по координатам X и Y. Метод принимает два параметра, задающие в пикселях горизональную и вертикальную координаты соответственно.
+</p>
+<ul><li>Поддерживается IE начиная с 4.0
+</li></ul>
+<a name="getElementById.28.29"></a><h3> getElementById()  </h2>
+
+
+</p><table><tr><td bgcolor=aqua><pre>getElementById({Имя элемента})</pre></td></tr></table>
+<p>Возвращает элемент, имя которого передано в качестве параметра. Имя элемента страницы задается атрибутом ID. Метод принимает единственный параметр - имя элемента страницы.
+</p>
+<ul><li>Поддерживаестя IE начиная с 5.0
+</li></ul>
+<a name="getSelection.28.29"></a><h3> getSelection()  </h2>
+<p>Возвращает строку, содержащую текст, выделенный пользователем на странице. Метод не принимает параметров.
+</p>
+<ul><li>Поддерживается только NN начиная с 4.0
+</li></ul>
+<a name="write.28.29"></a><h3> write()  </h2>
+
+
+</p><table><tr><td bgcolor=aqua><pre>write({Текст})</pre></td></tr></table>
+<p>Записывает текст или HTML-код, переданный как параметр, в текущее место документа.
+</p>
+<ul><li>Поддерживается IE начиная с 3.02 и NN начиная с 2.0
+</li></ul>
+<a name="writeLn.28.29"></a><h3> writeLn()  </h2>
+
+</p><table><tr><td bgcolor=aqua><pre>writeLn({Текст})</pre></td></tr></table>
+<p>То же самое, что write, но в конце добавляет символ возврата каретки и перевода строки.
+</p>
+<ul><li>Поддерживается IE начиная с 3.02 и NN начиная с 2.0
+
+</li></ul>
+
+
+
+</body></html>
