@@ -13,17 +13,12 @@
 	<TH>Количество спутников</TH>
 </TR>
 <xsl:for-each select="solar/planet">
-	<xsl:sort order="ascending" select="satellite_number" data-type="number"/>
-	<xsl:sort order="ascending" select="@caption"/>
-	<tr>
-		<xsl:choose>
-			<xsl:when test="(diametr div 2)&lt;10000">
-				<xsl:attribute name="BGCOLOR">lightgreen</xsl:attribute>
-			</xsl:when>
-			<xsl:otherwise>
-				<xsl:attribute name="BGCOLOR">lightyellow</xsl:attribute>
-			</xsl:otherwise>
-		</xsl:choose>
+<xsl:sort order="ascending" select="satellite_number" data-type="number"/>
+<xsl:sort order="ascending" select="@caption"/>
+  <xsl:choose>
+	<xsl:when test="(diametr div 2)&lt;10000">
+		<tr>
+		<xsl:attribute name="BGCOLOR">lightgreen</xsl:attribute>
 		<td align="center"><xsl:value-of select="position()+1"/></td>
 		<td align="center"><xsl:value-of select="@caption"/></td>
 		<td align="center"><xsl:value-of select="distance"/></td>
@@ -32,7 +27,22 @@
 		<td align="center"><xsl:value-of select="weight"/></td>
 		<td align="center"><xsl:value-of select="diametr"/></td>
 		<td align="center"><xsl:value-of select="satellite_number"/></td>
-	</tr>  	
+		</tr>
+	</xsl:when>
+   <xsl:otherwise>
+		<tr>
+		<xsl:attribute name="BGCOLOR">lightyellow</xsl:attribute>
+		<td align="center"><xsl:value-of select="position()+1"/></td>
+		<td align="center"><xsl:value-of select="@caption"/></td>
+		<td align="center"><xsl:value-of select="distance"/></td>
+		<td align="center"><xsl:value-of select="circulation_period"/></td>
+		<td align="center"><xsl:value-of select="revolution_period"/></td>
+		<td align="center"><xsl:value-of select="weight"/></td>
+		<td align="center"><xsl:value-of select="diametr"/></td>
+		<td align="center"><xsl:value-of select="satellite_number"/></td>
+		</tr>
+   </xsl:otherwise>
+  </xsl:choose>
 </xsl:for-each>
 </table>
 </xsl:template>
