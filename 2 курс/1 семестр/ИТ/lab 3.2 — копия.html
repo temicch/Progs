@@ -6,8 +6,7 @@
 
 
 <script language="JavaScript">
-
-/*
+var str, strtemp;
 function setCookie (name, value, lostenter) 
 {
     d = new Date();
@@ -28,49 +27,11 @@ function getCookie()
 	}
 	return 0;
 }
-*/
-
-function setCookie(name, value, expire) 
-{  
-	document.cookie = name + "=" + escape(value) +
-		//В строку дописывается имя устанавливаемой cookie
-	((expire == null) ? "" : ("; expires=" + expire.toUTCString()))
-		//Устанавливается время действия
-}
-
-function getCookie(Name) 
-{   
-	var search = Name + "="
-		//Создается строка для поиска в document.cookie
-	if (document.cookie.length > 0) 
-	{
-		offset = document.cookie.indexOf(search)
-			//Поиск cookie по ее имени
-		if (offset != -1) 
-		{
-			offset += search.length
-			end = document.cookie.indexOf(";", offset)
-				//Определили положение нужной cookie, и по индексам вырежем ее
-			if (end == -1)
-				end = document.cookie.length
-			return unescape(document.cookie.substring(offset, end))
-				//Вернули подстроку, содержащюю нужное значение cookie
-		}
-	}
-	return 0;
-}
-
-function buttonExit(name) 
-{
-	now = new Date();
-	now.setTime(now.getTime() - 1000*60*60*24*365);
-	setCookie(name, "", now);
-	registrate();
-}
 
 function buttonClear()
 {
-	setCookie('visits', 0);
+	setCookie(str[0], 0, str[2]);
+	getCookie();
 	login();
 }
 
@@ -81,17 +42,10 @@ function buttonReg()
 		document.getElementById('textInput').value = "Неверно введены данные";
 		return;
 	}
-	var today = new Date();
-	expire = new Date();
-	expire.setTime(today.getTime() + 1000*60*60*24*365);
-	
-	setCookie('name', document.getElementById('textInput').value, expire);
-	setCookie('visits', 0);
-	
-	d2 = new Date(today);
-	setCookie('lastEnter', d2.toUTCString());
+	cDate = new Date();
+	setCookie(document.getElementById('textInput').value, 0, cDate.getTime());
 	document.getElementById('text').innerHTML = "";
-	getCookie('name');
+	getCookie();
 	login();
 }
 
@@ -99,7 +53,9 @@ function login()
 {
 	d = new Date();
 
-	then = new Date(getCookie('lastEnter'));
+	then = new Date(str[2]);
+
+	alert(str[2]);
 	
     secondsLeft = Math.round((60 - then.getSeconds() + d.getSeconds())%60);
 	minutesLeft = Math.round((60 - then.getMinutes() + d.getMinutes())%60);
@@ -114,15 +70,14 @@ function login()
 	if(d.getFullYear() - then.getFullYear() > 1 && d.getMonth() >= then.getMonth()) 
 	 	monthsLeft -=12;
 	
-	setCookie('visits', Number(getCookie('visits')) + 1);
-	setCookie('lastEnter', d.toUTCString());
+	setCookie(str[0], (Number(str[1])+1), d.getTime());
+	getCookie();
 	document.getElementById('but').type = 'HIDDEN';
 	document.getElementById('clear').type = 'button';
-	document.getElementById('exit').type = 'button';
 	
 	document.getElementById('text').innerHTML = "<b>COOKIE</b><br><br>Доброй ночи, " + 
-	getCookie('name') + "!<br>Вы были на этой странице: " + 
-	getCookie('visits') + " раз" +
+	str[0] + "!<br>Вы были на этой странице: " + 
+	str[1] + " раз" +
 	"<br>Последний раз вы заходили: " +
 	((monthsLeft) ? monthsLeft + " месяцев " : "") +
 	((daysLeft) ? daysLeft + " дней " : "") +
@@ -135,17 +90,15 @@ function registrate()
 {
 	document.getElementById('but').type = "button";
 	document.getElementById('clear').type = "HIDDEN";
-	document.getElementById('exit').type = "HIDDEN";
 	document.getElementById('text').innerHTML = "<b>COOKIE</b><br><br>Доброй ночи! <br>Представьтесь, пожалуйста <br><input id = 'textInput' type = 'text'><br>";
 }
 </script>
 
-<BODY onLoad = "getCookie('name') ? login() : registrate()">
+<BODY onLoad = "getCookie() ? login() : registrate()">
 
 <span id="text">
 </span>
 <br>
 <input  id = "but" type="button" onClick = "buttonReg()" value = "Изменить имя">
 <input  id = "clear" type="button" onClick = "buttonClear()" value = "Обнулить посещения">
-<input  id = "exit" type="button" onClick = "buttonExit('name')" value = "Выйти">
 </BODY></HTML>
