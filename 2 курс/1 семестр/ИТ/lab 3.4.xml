@@ -1,221 +1,221 @@
-п»ї<?xml version="1.0" encoding="WINDOWS-1251"?>
+<?xml version="1.0" encoding="WINDOWS-1251"?>
 <?xml-stylesheet type='text/xsl' href='lab 3.3.xsl'?>
 <main>
-	<facultet caption="РР’Рў">
+	<facultet caption="ИВТ">
 		<course number = "1">
-			<group number = "РРџ-912">
-				<student name = "Р•РІРіРµРЅРёРЅ РђР»РµРєСЃРµР№">
-					<subject title = "РСЃС‚РѕСЂРёСЏ">2</subject>
-					<subject title = "РњР°С‚РµРјР°С‚РёС‡РµСЃРєРёР№ Р°РЅР°Р»РёР·">2</subject>
-					<subject title = "Р“РµРѕРјРµС‚СЂРёСЏ">2</subject>
-					<subject title = "Р›РёС‚РµСЂР°С‚СѓСЂР°">2</subject>
-					<subject title = "Р¤РёР·РёРєР°">1</subject>
-					<subject title = "РћР‘Р–">0</subject>
-					<subject title = "РРў">1</subject>
+			<group number = "ИП-912">
+				<student name = "Евгенин Алексей">
+					<subject title = "История">2</subject>
+					<subject title = "Математический анализ">2</subject>
+					<subject title = "Геометрия">2</subject>
+					<subject title = "Литература">2</subject>
+					<subject title = "Физика">1</subject>
+					<subject title = "ОБЖ">0</subject>
+					<subject title = "ИТ">1</subject>
 				</student>
-				<student name = "РЎР°РґР¶РёРєРѕРІ Р’Р°СЃРёР»РёР№">
-					<subject title = "РСЃС‚РѕСЂРёСЏ">2</subject>
-					<subject title = "РњР°С‚РµРјР°С‚РёС‡РµСЃРєРёР№ Р°РЅР°Р»РёР·">2</subject>
-					<subject title = "РњР°РіРёСЏ">1</subject>
-					<subject title = "Р›РёС‚РµСЂР°С‚СѓСЂР°">0</subject>
-					<subject title = "Р¤РёР·РёРєР°">2</subject>
-					<subject title = "РћР‘Р–">1</subject>
-					<subject title = "РРў">2</subject>
+				<student name = "Саджиков Василий">
+					<subject title = "История">2</subject>
+					<subject title = "Математический анализ">2</subject>
+					<subject title = "Магия">1</subject>
+					<subject title = "Литература">0</subject>
+					<subject title = "Физика">2</subject>
+					<subject title = "ОБЖ">1</subject>
+					<subject title = "ИТ">2</subject>
 				</student>
-				<student name = "Р•СЃРµРЅРёРЅ РЎРµСЂРіРµР№">
-					<subject title = "РСЃС‚РѕСЂРёСЏ">2</subject>
-					<subject title = "РњР°С‚РµРјР°С‚РёС‡РµСЃРєРёР№ Р°РЅР°Р»РёР·">2</subject>
-					<subject title = "Р›РёС‚РµСЂР°С‚СѓСЂР°">2</subject>
-					<subject title = "Р¤РёР·РёРєР°">2</subject>
-					<subject title = "РћР‘Р–">1</subject>
-					<subject title = "РРў">2</subject>
+				<student name = "Есенин Сергей">
+					<subject title = "История">2</subject>
+					<subject title = "Математический анализ">2</subject>
+					<subject title = "Литература">2</subject>
+					<subject title = "Физика">2</subject>
+					<subject title = "ОБЖ">1</subject>
+					<subject title = "ИТ">2</subject>
 				</student>
 			</group>
-			<group number = "РРџ-913">
-				<student name = "Р•РІРіРµРЅРёРЅ РќРёРєРёС‚Р°">
-					<subject title = "РСЃС‚РѕСЂРёСЏ">2</subject>
-					<subject title = "РњР°С‚РµРјР°С‚РёС‡РµСЃРєРёР№ Р°РЅР°Р»РёР·">2</subject>
-					<subject title = "Р“РµРѕРјРµС‚СЂРёСЏ">1</subject>
-					<subject title = "Р›РёС‚РµСЂР°С‚СѓСЂР°">1</subject>
-					<subject title = "Р¤РёР·РёРєР°">0</subject>
-					<subject title = "РћР‘Р–">0</subject>
-					<subject title = "РРў">1</subject>
+			<group number = "ИП-913">
+				<student name = "Евгенин Никита">
+					<subject title = "История">2</subject>
+					<subject title = "Математический анализ">2</subject>
+					<subject title = "Геометрия">1</subject>
+					<subject title = "Литература">1</subject>
+					<subject title = "Физика">0</subject>
+					<subject title = "ОБЖ">0</subject>
+					<subject title = "ИТ">1</subject>
 				</student>
-				<student name = "РЎРёРЅРёС‡РєРёРЅР° РЇРЅР°">
-					<subject title = "РСЃС‚РѕСЂРёСЏ">2</subject>
-					<subject title = "РњР°С‚РµРјР°С‚РёС‡РµСЃРєРёР№ Р°РЅР°Р»РёР·">2</subject>
-					<subject title = "РњР°РіРёСЏ">1</subject>
-					<subject title = "Р›РёС‚РµСЂР°С‚СѓСЂР°">1</subject>
-					<subject title = "Р¤РёР·РёРєР°">1</subject>
-					<subject title = "РћР‘Р–">1</subject>
-					<subject title = "РРў">1</subject>
+				<student name = "Синичкина Яна">
+					<subject title = "История">2</subject>
+					<subject title = "Математический анализ">2</subject>
+					<subject title = "Магия">1</subject>
+					<subject title = "Литература">1</subject>
+					<subject title = "Физика">1</subject>
+					<subject title = "ОБЖ">1</subject>
+					<subject title = "ИТ">1</subject>
 				</student>
-				<student name = "РњРѕС‚С‹Р»СЊРєРѕРІР° Р”РёР°РЅР°">
-					<subject title = "РСЃС‚РѕСЂРёСЏ">2</subject>
-					<subject title = "РњР°С‚РµРјР°С‚РёС‡РµСЃРєРёР№ Р°РЅР°Р»РёР·">0</subject>
-					<subject title = "Р›РёС‚РµСЂР°С‚СѓСЂР°">0</subject>
-					<subject title = "Р¤РёР·РёРєР°">0</subject>
-					<subject title = "РћР‘Р–">0</subject>
-					<subject title = "РРў">0</subject>
+				<student name = "Мотылькова Диана">
+					<subject title = "История">2</subject>
+					<subject title = "Математический анализ">0</subject>
+					<subject title = "Литература">0</subject>
+					<subject title = "Физика">0</subject>
+					<subject title = "ОБЖ">0</subject>
+					<subject title = "ИТ">0</subject>
 				</student>
 			</group>
 		</course>
 		<course number = "2">
-			<group number = "РРџ-812">
-				<student name = "Р•РІРіРµРЅРёРЅ РђР»РµРєСЃРµР№">
-					<subject title = "РСЃС‚РѕСЂРёСЏ">2</subject>
-					<subject title = "РњР°С‚РµРјР°С‚РёС‡РµСЃРєРёР№ Р°РЅР°Р»РёР·">2</subject>
-					<subject title = "Р“РµРѕРјРµС‚СЂРёСЏ">2</subject>
-					<subject title = "Р›РёС‚РµСЂР°С‚СѓСЂР°">2</subject>
-					<subject title = "Р¤РёР·РёРєР°">1</subject>
-					<subject title = "РћР‘Р–">0</subject>
-					<subject title = "РРў">1</subject>
+			<group number = "ИП-812">
+				<student name = "Евгенин Алексей">
+					<subject title = "История">2</subject>
+					<subject title = "Математический анализ">2</subject>
+					<subject title = "Геометрия">2</subject>
+					<subject title = "Литература">2</subject>
+					<subject title = "Физика">1</subject>
+					<subject title = "ОБЖ">0</subject>
+					<subject title = "ИТ">1</subject>
 				</student>
-				<student name = "РЎР°РґР¶РёРєРѕРІ Р’Р°СЃРёР»РёР№">
-					<subject title = "РСЃС‚РѕСЂРёСЏ">2</subject>
-					<subject title = "РњР°С‚РµРјР°С‚РёС‡РµСЃРєРёР№ Р°РЅР°Р»РёР·">2</subject>
-					<subject title = "РњР°РіРёСЏ">1</subject>
-					<subject title = "Р›РёС‚РµСЂР°С‚СѓСЂР°">0</subject>
-					<subject title = "Р¤РёР·РёРєР°">2</subject>
-					<subject title = "РћР‘Р–">1</subject>
-					<subject title = "РРў">2</subject>
+				<student name = "Саджиков Василий">
+					<subject title = "История">2</subject>
+					<subject title = "Математический анализ">2</subject>
+					<subject title = "Магия">1</subject>
+					<subject title = "Литература">0</subject>
+					<subject title = "Физика">2</subject>
+					<subject title = "ОБЖ">1</subject>
+					<subject title = "ИТ">2</subject>
 				</student>
-				<student name = "Р•СЃРµРЅРёРЅ РЎРµСЂРіРµР№">
-					<subject title = "РСЃС‚РѕСЂРёСЏ">2</subject>
-					<subject title = "РњР°С‚РµРјР°С‚РёС‡РµСЃРєРёР№ Р°РЅР°Р»РёР·">2</subject>
-					<subject title = "Р›РёС‚РµСЂР°С‚СѓСЂР°">2</subject>
-					<subject title = "Р¤РёР·РёРєР°">2</subject>
-					<subject title = "РћР‘Р–">1</subject>
-					<subject title = "РРў">2</subject>
+				<student name = "Есенин Сергей">
+					<subject title = "История">2</subject>
+					<subject title = "Математический анализ">2</subject>
+					<subject title = "Литература">2</subject>
+					<subject title = "Физика">2</subject>
+					<subject title = "ОБЖ">1</subject>
+					<subject title = "ИТ">2</subject>
 				</student>
 			</group>
-			<group number = "РРџ-813">
-				<student name = "Р¤РёР»РёСЃРµРЅРєРѕ РќРёРєРёС‚Р°">
-					<subject title = "РСЃС‚РѕСЂРёСЏ">2</subject>
-					<subject title = "РњР°С‚РµРјР°С‚РёС‡РµСЃРєРёР№ Р°РЅР°Р»РёР·">2</subject>
-					<subject title = "Р“РµРѕРјРµС‚СЂРёСЏ">1</subject>
-					<subject title = "Р›РёС‚РµСЂР°С‚СѓСЂР°">1</subject>
-					<subject title = "Р¤РёР·РёРєР°">0</subject>
-					<subject title = "РћР‘Р–">0</subject>
-					<subject title = "РРў">1</subject>
+			<group number = "ИП-813">
+				<student name = "Филисенко Никита">
+					<subject title = "История">2</subject>
+					<subject title = "Математический анализ">2</subject>
+					<subject title = "Геометрия">1</subject>
+					<subject title = "Литература">1</subject>
+					<subject title = "Физика">0</subject>
+					<subject title = "ОБЖ">0</subject>
+					<subject title = "ИТ">1</subject>
 				</student>
-				<student name = "РђР»СЃРѕ РЇРЅР°">
-					<subject title = "РСЃС‚РѕСЂРёСЏ">2</subject>
-					<subject title = "РњР°С‚РµРјР°С‚РёС‡РµСЃРєРёР№ Р°РЅР°Р»РёР·">2</subject>
-					<subject title = "РњР°РіРёСЏ">1</subject>
-					<subject title = "Р›РёС‚РµСЂР°С‚СѓСЂР°">1</subject>
-					<subject title = "Р¤РёР·РёРєР°">1</subject>
-					<subject title = "РћР‘Р–">1</subject>
-					<subject title = "РРў">1</subject>
+				<student name = "Алсо Яна">
+					<subject title = "История">2</subject>
+					<subject title = "Математический анализ">2</subject>
+					<subject title = "Магия">1</subject>
+					<subject title = "Литература">1</subject>
+					<subject title = "Физика">1</subject>
+					<subject title = "ОБЖ">1</subject>
+					<subject title = "ИТ">1</subject>
 				</student>
-				<student name = "Р­С‚СЃРµС‚РµСЂР° РљР°С‚СЏ">
-					<subject title = "РСЃС‚РѕСЂРёСЏ">2</subject>
-					<subject title = "РњР°С‚РµРјР°С‚РёС‡РµСЃРєРёР№ Р°РЅР°Р»РёР·">0</subject>
-					<subject title = "Р›РёС‚РµСЂР°С‚СѓСЂР°">0</subject>
-					<subject title = "Р¤РёР·РёРєР°">0</subject>
-					<subject title = "РћР‘Р–">0</subject>
-					<subject title = "РРў">0</subject>
+				<student name = "Этсетера Катя">
+					<subject title = "История">2</subject>
+					<subject title = "Математический анализ">0</subject>
+					<subject title = "Литература">0</subject>
+					<subject title = "Физика">0</subject>
+					<subject title = "ОБЖ">0</subject>
+					<subject title = "ИТ">0</subject>
 				</student>
 			</group>
 		</course>		
 	</facultet>
-	<facultet caption="РђР­РЎ">
+	<facultet caption="АЭС">
 		<course number = "1">
-			<group number = "РђР‘-25">
-				<student name = "Р›РёС‚РµР№РєРёРЅ РђР»РµРєСЃРµР№">
-					<subject title = "РСЃС‚РѕСЂРёСЏ">2</subject>
-					<subject title = "РњР°С‚РµРјР°С‚РёС‡РµСЃРєРёР№ Р°РЅР°Р»РёР·">2</subject>
-					<subject title = "Р“РµРѕРјРµС‚СЂРёСЏ">2</subject>
-					<subject title = "Р›РёС‚РµСЂР°С‚СѓСЂР°">2</subject>
-					<subject title = "Р¤РёР·РёРєР°">1</subject>
-					<subject title = "РћР‘Р–">0</subject>
-					<subject title = "РРў">1</subject>
+			<group number = "АБ-25">
+				<student name = "Литейкин Алексей">
+					<subject title = "История">2</subject>
+					<subject title = "Математический анализ">2</subject>
+					<subject title = "Геометрия">2</subject>
+					<subject title = "Литература">2</subject>
+					<subject title = "Физика">1</subject>
+					<subject title = "ОБЖ">0</subject>
+					<subject title = "ИТ">1</subject>
 				</student>
-				<student name = "РќРµР№СЂРѕРЅРѕРІ Р’Р°СЃРёР»РёР№">
-					<subject title = "РСЃС‚РѕСЂРёСЏ">2</subject>
-					<subject title = "РњР°С‚РµРјР°С‚РёС‡РµСЃРєРёР№ Р°РЅР°Р»РёР·">2</subject>
-					<subject title = "РњР°РіРёСЏ">1</subject>
-					<subject title = "Р›РёС‚РµСЂР°С‚СѓСЂР°">0</subject>
-					<subject title = "Р¤РёР·РёРєР°">2</subject>
-					<subject title = "РћР‘Р–">1</subject>
-					<subject title = "РРў">2</subject>
+				<student name = "Нейронов Василий">
+					<subject title = "История">2</subject>
+					<subject title = "Математический анализ">2</subject>
+					<subject title = "Магия">1</subject>
+					<subject title = "Литература">0</subject>
+					<subject title = "Физика">2</subject>
+					<subject title = "ОБЖ">1</subject>
+					<subject title = "ИТ">2</subject>
 				</student>
-				<student name = "РђР±РґСѓР» Р”Р¶Р°Р±Р°СЂ">
-					<subject title = "РСЃС‚РѕСЂРёСЏ">2</subject>
-					<subject title = "РњР°С‚РµРјР°С‚РёС‡РµСЃРєРёР№ Р°РЅР°Р»РёР·">2</subject>
-					<subject title = "Р›РёС‚РµСЂР°С‚СѓСЂР°">2</subject>
-					<subject title = "Р¤РёР·РёРєР°">2</subject>
-					<subject title = "РћР‘Р–">1</subject>
-					<subject title = "РРў">2</subject>
+				<student name = "Абдул Джабар">
+					<subject title = "История">2</subject>
+					<subject title = "Математический анализ">2</subject>
+					<subject title = "Литература">2</subject>
+					<subject title = "Физика">2</subject>
+					<subject title = "ОБЖ">1</subject>
+					<subject title = "ИТ">2</subject>
 				</student>
 			</group>
-			<group number = "РђР‘-26">
-				<student name = "Р›РёРЅРµР№РЅС‹С… Р РёС‚Р°">
-					<subject title = "РСЃС‚РѕСЂРёСЏ">2</subject>
-					<subject title = "РњР°С‚РµРјР°С‚РёС‡РµСЃРєРёР№ Р°РЅР°Р»РёР·">2</subject>
-					<subject title = "Р“РµРѕРјРµС‚СЂРёСЏ">1</subject>
-					<subject title = "Р›РёС‚РµСЂР°С‚СѓСЂР°">1</subject>
-					<subject title = "Р¤РёР·РёРєР°">0</subject>
-					<subject title = "РћР‘Р–">0</subject>
-					<subject title = "РРў">1</subject>
+			<group number = "АБ-26">
+				<student name = "Линейных Рита">
+					<subject title = "История">2</subject>
+					<subject title = "Математический анализ">2</subject>
+					<subject title = "Геометрия">1</subject>
+					<subject title = "Литература">1</subject>
+					<subject title = "Физика">0</subject>
+					<subject title = "ОБЖ">0</subject>
+					<subject title = "ИТ">1</subject>
 				</student>
-				<student name = "РђРєС‚СѓР°Р»СЊРЅС‹Р№ РљРѕСЃС‚СЏ">
-					<subject title = "РСЃС‚РѕСЂРёСЏ">2</subject>
-					<subject title = "РњР°С‚РµРјР°С‚РёС‡РµСЃРєРёР№ Р°РЅР°Р»РёР·">2</subject>
-					<subject title = "РњР°РіРёСЏ">1</subject>
-					<subject title = "Р›РёС‚РµСЂР°С‚СѓСЂР°">1</subject>
-					<subject title = "Р¤РёР·РёРєР°">1</subject>
-					<subject title = "РћР‘Р–">1</subject>
-					<subject title = "РРў">1</subject>
+				<student name = "Актуальный Костя">
+					<subject title = "История">2</subject>
+					<subject title = "Математический анализ">2</subject>
+					<subject title = "Магия">1</subject>
+					<subject title = "Литература">1</subject>
+					<subject title = "Физика">1</subject>
+					<subject title = "ОБЖ">1</subject>
+					<subject title = "ИТ">1</subject>
 				</student>
-				<student name = "РЎРјРёС‚ РЎС‚СЌРЅ">
-					<subject title = "РСЃС‚РѕСЂРёСЏ">2</subject>
-					<subject title = "РњР°С‚РµРјР°С‚РёС‡РµСЃРєРёР№ Р°РЅР°Р»РёР·">0</subject>
-					<subject title = "Р›РёС‚РµСЂР°С‚СѓСЂР°">0</subject>
-					<subject title = "Р¤РёР·РёРєР°">0</subject>
-					<subject title = "РћР‘Р–">0</subject>
-					<subject title = "РРў">0</subject>
+				<student name = "Смит Стэн">
+					<subject title = "История">2</subject>
+					<subject title = "Математический анализ">0</subject>
+					<subject title = "Литература">0</subject>
+					<subject title = "Физика">0</subject>
+					<subject title = "ОБЖ">0</subject>
+					<subject title = "ИТ">0</subject>
 				</student>
 			</group>
 		</course>
 		<course number = "2">
-			<group number = "РђР‘-35">
-				<student name = "РЎРјРёС‚ Р¤СЂР°РЅСЃРёРЅ">
-					<subject title = "РСЃС‚РѕСЂРёСЏ">2</subject>
-					<subject title = "РњР°С‚РµРјР°С‚РёС‡РµСЃРєРёР№ Р°РЅР°Р»РёР·">2</subject>
-					<subject title = "Р“РµРѕРјРµС‚СЂРёСЏ">2</subject>
-					<subject title = "Р›РёС‚РµСЂР°С‚СѓСЂР°">2</subject>
-					<subject title = "Р¤РёР·РёРєР°">1</subject>
-					<subject title = "РћР‘Р–">0</subject>
-					<subject title = "РРў">1</subject>
+			<group number = "АБ-35">
+				<student name = "Смит Франсин">
+					<subject title = "История">2</subject>
+					<subject title = "Математический анализ">2</subject>
+					<subject title = "Геометрия">2</subject>
+					<subject title = "Литература">2</subject>
+					<subject title = "Физика">1</subject>
+					<subject title = "ОБЖ">0</subject>
+					<subject title = "ИТ">1</subject>
 				</student>
-				<student name = "РћСЂСѓР¶РµР№РЅРёРєРѕРІ РРІР°РЅ">
-					<subject title = "РСЃС‚РѕСЂРёСЏ">2</subject>
-					<subject title = "РњР°С‚РµРјР°С‚РёС‡РµСЃРєРёР№ Р°РЅР°Р»РёР·">2</subject>
-					<subject title = "РњР°РіРёСЏ">1</subject>
-					<subject title = "Р›РёС‚РµСЂР°С‚СѓСЂР°">0</subject>
-					<subject title = "Р¤РёР·РёРєР°">2</subject>
-					<subject title = "РћР‘Р–">1</subject>
-					<subject title = "РРў">2</subject>
+				<student name = "Оружейников Иван">
+					<subject title = "История">2</subject>
+					<subject title = "Математический анализ">2</subject>
+					<subject title = "Магия">1</subject>
+					<subject title = "Литература">0</subject>
+					<subject title = "Физика">2</subject>
+					<subject title = "ОБЖ">1</subject>
+					<subject title = "ИТ">2</subject>
 				</student>
-				<student name = "Р¤СЂР°РЅС‡РёРєРѕРІР° РђР»РµРЅР°">
-					<subject title = "РСЃС‚РѕСЂРёСЏ">2</subject>
-					<subject title = "РњР°С‚РµРјР°С‚РёС‡РµСЃРєРёР№ Р°РЅР°Р»РёР·">2</subject>
-					<subject title = "Р›РёС‚РµСЂР°С‚СѓСЂР°">2</subject>
-					<subject title = "Р¤РёР·РёРєР°">2</subject>
-					<subject title = "РћР‘Р–">1</subject>
-					<subject title = "РРў">2</subject>
+				<student name = "Франчикова Алена">
+					<subject title = "История">2</subject>
+					<subject title = "Математический анализ">2</subject>
+					<subject title = "Литература">2</subject>
+					<subject title = "Физика">2</subject>
+					<subject title = "ОБЖ">1</subject>
+					<subject title = "ИТ">2</subject>
 				</student>
 			</group>
-			<group number = "РђР‘-36">
-				<student name = "Р‘СѓР»Р°С‚РѕРІР° РђРЅСЏ">
-					<subject title = "РСЃС‚РѕСЂРёСЏ">2</subject>
-					<subject title = "РњР°С‚РµРјР°С‚РёС‡РµСЃРєРёР№ Р°РЅР°Р»РёР·">2</subject>
-					<subject title = "Р“РµРѕРјРµС‚СЂРёСЏ">1</subject>
-					<subject title = "Р›РёС‚РµСЂР°С‚СѓСЂР°">1</subject>
-					<subject title = "Р¤РёР·РёРєР°">0</subject>
-					<subject title = "РћР‘Р–">0</subject>
-					<subject title = "РРў">1</subject>
+			<group number = "АБ-36">
+				<student name = "Булатова Аня">
+					<subject title = "История">2</subject>
+					<subject title = "Математический анализ">2</subject>
+					<subject title = "Геометрия">1</subject>
+					<subject title = "Литература">1</subject>
+					<subject title = "Физика">0</subject>
+					<subject title = "ОБЖ">0</subject>
+					<subject title = "ИТ">1</subject>
 				</student>
 			</group>
 		</course>		
