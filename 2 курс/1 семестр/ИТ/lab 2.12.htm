@@ -1,4 +1,4 @@
-<HTML> 
+п»ї<HTML> 
 <HEAD>
 
 <script language="JavaScript">
@@ -72,27 +72,27 @@ function createTable(obj,ar3,t)
 	var R= ar3.length; 
 	var m;
 	if(newElem != -1) deleteTable(newElem);
-    newElem=document.createElement("table");//создаём новый элемент страницы (TABLE) 
-    newElem.border=1;//указывает толщину рамки таблицы 
+    newElem=document.createElement("table");//СЃРѕР·РґР°С‘Рј РЅРѕРІС‹Р№ СЌР»РµРјРµРЅС‚ СЃС‚СЂР°РЅРёС†С‹ (TABLE) 
+    newElem.border=1;//СѓРєР°Р·С‹РІР°РµС‚ С‚РѕР»С‰РёРЅСѓ СЂР°РјРєРё С‚Р°Р±Р»РёС†С‹ 
     newElem.id = "tbl";
      
-    var newRow=newElem.insertRow(0);//добавляем строку в созданной таблице 
-    var newCell = newRow.insertCell(0);//в созданной строке добавляем столбец 
+    var newRow=newElem.insertRow(0);//РґРѕР±Р°РІР»СЏРµРј СЃС‚СЂРѕРєСѓ РІ СЃРѕР·РґР°РЅРЅРѕР№ С‚Р°Р±Р»РёС†Рµ 
+    var newCell = newRow.insertCell(0);//РІ СЃРѕР·РґР°РЅРЅРѕР№ СЃС‚СЂРѕРєРµ РґРѕР±Р°РІР»СЏРµРј СЃС‚РѕР»Р±РµС† 
     newCell.width="20";    
     newCell.align="center";
     newCell.innerHTML="<b>L</b>";
      
-    var newCell = newRow.insertCell(-1);//добавляем ещё один столбец 
+    var newCell = newRow.insertCell(-1);//РґРѕР±Р°РІР»СЏРµРј РµС‰С‘ РѕРґРёРЅ СЃС‚РѕР»Р±РµС† 
     newCell.width="20";  
     newCell.align="center";
     newCell.innerHTML="<b>R</b>";
     
-    var newCell = newRow.insertCell(-1);//добавляем ещё один столбец 
+    var newCell = newRow.insertCell(-1);//РґРѕР±Р°РІР»СЏРµРј РµС‰С‘ РѕРґРёРЅ СЃС‚РѕР»Р±РµС† 
     newCell.width="20";  
     newCell.align="center";
     newCell.innerHTML="<b>m</b>";
 
-    var newCell = newRow.insertCell(-1);//добавляем ещё один столбец 
+    var newCell = newRow.insertCell(-1);//РґРѕР±Р°РІР»СЏРµРј РµС‰С‘ РѕРґРёРЅ СЃС‚РѕР»Р±РµС† 
     newCell.align="center";
     newCell.innerHTML="<b>A[m]</b>";
 	while ( L < R ) 
@@ -119,7 +119,7 @@ function createTable(obj,ar3,t)
 		else
 			R=m;
 	}
-	document.body.appendChild(newElem);//прописываем созданную таблицу на страницу 
+	document.body.appendChild(newElem);//РїСЂРѕРїРёСЃС‹РІР°РµРј СЃРѕР·РґР°РЅРЅСѓСЋ С‚Р°Р±Р»РёС†Сѓ РЅР° СЃС‚СЂР°РЅРёС†Сѓ 
 	if (ar3[L] == t ) return L;
 	else return -1;
 }  
@@ -130,10 +130,10 @@ function createTable(obj,ar3,t)
 
 <BODY onLoad="rec(form2);sortTable(form2);">
 
-Двоичный поиск
+Р”РІРѕРёС‡РЅС‹Р№ РїРѕРёСЃРє
 <P>
 <FORM name="form2"><TABLE BORDER=1><TR>
-<TH>Массив чисел:</TH>
+<TH>РњР°СЃСЃРёРІ С‡РёСЃРµР»:</TH>
 <TD> <INPUT NAME="t0" onBlur = "rec2(form2); sortTable(form2);" SIZE=3 TYPE=TEXT ></TD>
 <TD> <INPUT NAME="t1" onBlur = "rec2(form2); sortTable(form2);" SIZE=3 TYPE=TEXT ></TD>
 <TD> <INPUT NAME="t2" onBlur = "rec2(form2); sortTable(form2);" SIZE=3 TYPE=TEXT ></TD>
@@ -146,17 +146,17 @@ function createTable(obj,ar3,t)
 </TR></TABLE></form>
 <form name = "form3">
 <P>
-Число:
+Р§РёСЃР»Рѕ:
 <INPUT NAME="data2" SIZE=3 TYPE=TEXTBOX>
 <P>
-Результат (позиция):
+Р РµР·СѓР»СЊС‚Р°С‚ (РїРѕР·РёС†РёСЏ):
 <INPUT NAME="result" SIZE=3 TYPE=TEXTBOX>
 <P>
-<INPUT TYPE="button" VALUE="Определить" 
+<INPUT TYPE="button" VALUE="РћРїСЂРµРґРµР»РёС‚СЊ" 
 OnClick="form3.result.value=createTable (form3,ar3,form3.data2.value)"> 
-<input type="reset" onClick = "deleteTable()" value="Очистить">
+<input type="reset" onClick = "deleteTable()" value="РћС‡РёСЃС‚РёС‚СЊ">
 
-<P>Таблица промежуточных значений: <BR>
+<P>РўР°Р±Р»РёС†Р° РїСЂРѕРјРµР¶СѓС‚РѕС‡РЅС‹С… Р·РЅР°С‡РµРЅРёР№: <BR>
 </FORM>
 </BODY> 
 </HTML>
