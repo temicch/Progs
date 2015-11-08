@@ -1,12 +1,12 @@
-<html>
+п»ї<html>
  <head>
- <title>Лабораторная работа 3.4</title>
+ <title>Р›Р°Р±РѕСЂР°С‚РѕСЂРЅР°СЏ СЂР°Р±РѕС‚Р° 3.4</title>
  <script language="JavaScript"> 
 var mainTable = -1;
 var subject;
 var xmldoc=new ActiveXObject("Microsoft.XMLDOM") 
 xmldoc.async=false;
-xmldoc.load("lab 3.4.xml") // загружаем документ в память
+xmldoc.load("lab 3.4.xml") // Р·Р°РіСЂСѓР¶Р°РµРј РґРѕРєСѓРјРµРЅС‚ РІ РїР°РјСЏС‚СЊ
 
 function deleteTable()
 {
@@ -18,14 +18,14 @@ function deleteTable()
 function ReloadDoc(i_facultet, i_course, i_group, i_student)
 { 
 	facultet = xmldoc.getElementsByTagName("facultet");
-	// Удаление исходных
+	// РЈРґР°Р»РµРЅРёРµ РёСЃС…РѕРґРЅС‹С…
 	count = document.getElementById("selectFacultet").length;
 	for(i = 0; i < count; i++)
 	{
 		var x = document.getElementById("selectFacultet");
 		x.remove(0);		
 	}
-	// Добавление
+	// Р”РѕР±Р°РІР»РµРЅРёРµ
 	for(i = 0; i < facultet.length; i++) 
 	{
 		var x = document.getElementById("selectFacultet");
@@ -36,14 +36,14 @@ function ReloadDoc(i_facultet, i_course, i_group, i_student)
 		x.add(option);	
 	}
 	course = facultet.item(i_facultet).getElementsByTagName("course");
-	// Удаление исходных
+	// РЈРґР°Р»РµРЅРёРµ РёСЃС…РѕРґРЅС‹С…
 	count = document.getElementById("selectCourse").length;
 	for(i = 0; i < count; i++)
 	{
 		var x = document.getElementById("selectCourse");
 		x.remove(0);		
 	}
-	// Добавление
+	// Р”РѕР±Р°РІР»РµРЅРёРµ
 	for(i = 0; i < course.length; i++) 
 	{
 		var x = document.getElementById("selectCourse");
@@ -54,14 +54,14 @@ function ReloadDoc(i_facultet, i_course, i_group, i_student)
 		x.add(option);	
 	}
 	group = course.item(i_course).getElementsByTagName("group");
-	// Удаление исходных
+	// РЈРґР°Р»РµРЅРёРµ РёСЃС…РѕРґРЅС‹С…
 	count = document.getElementById("selectGroup").length;
 	for(i = 0; i < count; i++)
 	{
 		var x = document.getElementById("selectGroup");
 		x.remove(0);		
 	}
-	// Добавление
+	// Р”РѕР±Р°РІР»РµРЅРёРµ
 	for(i = 0; i < group.length; i++) 
 	{
 		var x = document.getElementById("selectGroup");
@@ -72,14 +72,14 @@ function ReloadDoc(i_facultet, i_course, i_group, i_student)
 		x.add(option);	
 	}
 	student = group.item(i_group).getElementsByTagName("student");
-	// Удаление исходных
+	// РЈРґР°Р»РµРЅРёРµ РёСЃС…РѕРґРЅС‹С…
 	count = document.getElementById("selectStudent").length;
 	for(i = 0; i < count; i++)
 	{
 		var x = document.getElementById("selectStudent");
 		x.remove(0);		
 	}
-	// Добавление
+	// Р”РѕР±Р°РІР»РµРЅРёРµ
 	for(i = 0; i < student.length; i++) 
 	{
 		var x = document.getElementById("selectStudent");
@@ -92,8 +92,8 @@ function ReloadDoc(i_facultet, i_course, i_group, i_student)
 	subject = student.item(i_student).getElementsByTagName("subject");
 	
 	if(mainTable != -1) deleteTable(mainTable);
-    mainTable=document.createElement("table");//создаём новый элемент страницы (TABLE) 
-    mainTable.border=1;//указывает толщину рамки таблицы 
+    mainTable=document.createElement("table");//СЃРѕР·РґР°С‘Рј РЅРѕРІС‹Р№ СЌР»РµРјРµРЅС‚ СЃС‚СЂР°РЅРёС†С‹ (TABLE) 
+    mainTable.border=1;//СѓРєР°Р·С‹РІР°РµС‚ С‚РѕР»С‰РёРЅСѓ СЂР°РјРєРё С‚Р°Р±Р»РёС†С‹ 
     mainTable.id = "tbl";
 	for(i = 0; i < subject.length; i++) 
 	{
@@ -109,20 +109,20 @@ function ReloadDoc(i_facultet, i_course, i_group, i_student)
 			newCell.innerHTML="<input type = 'radio' disabled " + ((subject.item(i).text == j) ? "checked>" : ">");
 		}
 	}	
-    var newRow=mainTable.insertRow(0);//добавляем строку в созданной таблице 
-    var newCell = newRow.insertCell(0);//в созданной строке добавляем столбец 
+    var newRow=mainTable.insertRow(0);//РґРѕР±Р°РІР»СЏРµРј СЃС‚СЂРѕРєСѓ РІ СЃРѕР·РґР°РЅРЅРѕР№ С‚Р°Р±Р»РёС†Рµ 
+    var newCell = newRow.insertCell(0);//РІ СЃРѕР·РґР°РЅРЅРѕР№ СЃС‚СЂРѕРєРµ РґРѕР±Р°РІР»СЏРµРј СЃС‚РѕР»Р±РµС† 
     newCell.width="500";    
     newCell.align="center";
-    newCell.innerHTML="<b>Предмет</b>";
-    var newCell = newRow.insertCell(-1);//добавляем ещё один столбец 
+    newCell.innerHTML="<b>РџСЂРµРґРјРµС‚</b>";
+    var newCell = newRow.insertCell(-1);//РґРѕР±Р°РІР»СЏРµРј РµС‰С‘ РѕРґРёРЅ СЃС‚РѕР»Р±РµС† 
     newCell.width="50";  
     newCell.align="center";
     newCell.innerHTML="<b>0</b>";
-    var newCell = newRow.insertCell(-1);//добавляем ещё один столбец 
+    var newCell = newRow.insertCell(-1);//РґРѕР±Р°РІР»СЏРµРј РµС‰С‘ РѕРґРёРЅ СЃС‚РѕР»Р±РµС† 
     newCell.width="50";  
     newCell.align="center";
     newCell.innerHTML="<b>1</b>";
-    var newCell = newRow.insertCell(-1);//добавляем ещё один столбец 
+    var newCell = newRow.insertCell(-1);//РґРѕР±Р°РІР»СЏРµРј РµС‰С‘ РѕРґРёРЅ СЃС‚РѕР»Р±РµС† 
     newCell.width="50";  
     newCell.align="center";
     newCell.innerHTML="<b>2</b>";		
@@ -141,8 +141,8 @@ function GetMiddleMark()
 
  </head>
  <body onLoad="ReloadDoc(0, 0, 0, 0)"> 
- Факультет: <select id = "selectFacultet" onChange = "ReloadDoc(selectFacultet.selectedIndex, 0, 0, 0);" ></select>Курс: <select id = "selectCourse" onChange = "ReloadDoc(selectFacultet.selectedIndex, selectCourse.selectedIndex, 0, 0);" ></select>Группа: <select id = "selectGroup" onChange = "ReloadDoc(selectFacultet.selectedIndex, selectCourse.selectedIndex, selectGroup.selectedIndex, 0);" ></select>ФИО: <select id = "selectStudent" onChange = "ReloadDoc(selectFacultet.selectedIndex, selectCourse.selectedIndex, selectGroup.selectedIndex, selectStudent.selectedIndex);" ></select>
- <br><input id = "buttonDo" type = "button" value = "Выполнить" onClick = "endValue.innerHTML = 'Средний балл за контрольный срок составляет: ' + GetMiddleMark()"><input type = "button" value = "Отменить" onClick = "endValue.innerHTML = ''">
+ Р¤Р°РєСѓР»СЊС‚РµС‚: <select id = "selectFacultet" onChange = "ReloadDoc(selectFacultet.selectedIndex, 0, 0, 0);" ></select>РљСѓСЂСЃ: <select id = "selectCourse" onChange = "ReloadDoc(selectFacultet.selectedIndex, selectCourse.selectedIndex, 0, 0);" ></select>Р“СЂСѓРїРїР°: <select id = "selectGroup" onChange = "ReloadDoc(selectFacultet.selectedIndex, selectCourse.selectedIndex, selectGroup.selectedIndex, 0);" ></select>Р¤РРћ: <select id = "selectStudent" onChange = "ReloadDoc(selectFacultet.selectedIndex, selectCourse.selectedIndex, selectGroup.selectedIndex, selectStudent.selectedIndex);" ></select>
+ <br><input id = "buttonDo" type = "button" value = "Р’С‹РїРѕР»РЅРёС‚СЊ" onClick = "endValue.innerHTML = 'РЎСЂРµРґРЅРёР№ Р±Р°Р»Р» Р·Р° РєРѕРЅС‚СЂРѕР»СЊРЅС‹Р№ СЃСЂРѕРє СЃРѕСЃС‚Р°РІР»СЏРµС‚: ' + GetMiddleMark()"><input type = "button" value = "РћС‚РјРµРЅРёС‚СЊ" onClick = "endValue.innerHTML = ''">
  <br><span id = "endValue"></span>
  </body>
  </html>
