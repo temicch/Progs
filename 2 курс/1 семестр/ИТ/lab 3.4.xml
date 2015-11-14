@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="WINDOWS-1251"?>
-<?xml-stylesheet type='text/xsl' href='lab 3.3.xsl'?>
 <main>
 	<facultet caption="ИВТ">
 		<course number = "1">
@@ -8,55 +7,74 @@
 					<subject title = "История">2</subject>
 					<subject title = "Математический анализ">2</subject>
 					<subject title = "Геометрия">2</subject>
-					<subject title = "Литература">2</subject>
 					<subject title = "Физика">1</subject>
-					<subject title = "ОБЖ">0</subject>
 					<subject title = "ИТ">1</subject>
 				</student>
 				<student name = "Саджиков Василий">
-					<subject title = "История">2</subject>
-					<subject title = "Математический анализ">2</subject>
-					<subject title = "Магия">1</subject>
-					<subject title = "Литература">0</subject>
-					<subject title = "Физика">2</subject>
-					<subject title = "ОБЖ">1</subject>
-					<subject title = "ИТ">2</subject>
+					<subject title = "История">0</subject>
+					<subject title = "Математический анализ">1</subject>
+					<subject title = "Геометрия">1</subject>
+					<subject title = "Физика">1</subject>
+					<subject title = "ИТ">1</subject>
 				</student>
 				<student name = "Есенин Сергей">
 					<subject title = "История">2</subject>
 					<subject title = "Математический анализ">2</subject>
-					<subject title = "Литература">2</subject>
+					<subject title = "Геометрия">2</subject>
 					<subject title = "Физика">2</subject>
-					<subject title = "ОБЖ">1</subject>
 					<subject title = "ИТ">2</subject>
 				</student>
 			</group>
 			<group number = "ИП-913">
 				<student name = "Евгенин Никита">
 					<subject title = "История">2</subject>
-					<subject title = "Математический анализ">2</subject>
-					<subject title = "Геометрия">1</subject>
-					<subject title = "Литература">1</subject>
-					<subject title = "Физика">0</subject>
-					<subject title = "ОБЖ">0</subject>
-					<subject title = "ИТ">1</subject>
+					<subject title = "Математический анализ">1</subject>
+					<subject title = "Геометрия">2</subject>
+					<subject title = "Физика">1</subject>
+					<subject title = "ИТ">2</subject>
 				</student>
 				<student name = "Синичкина Яна">
-					<subject title = "История">2</subject>
-					<subject title = "Математический анализ">2</subject>
-					<subject title = "Магия">1</subject>
-					<subject title = "Литература">1</subject>
+					<subject title = "История">0</subject>
+					<subject title = "Математический анализ">0</subject>
+					<subject title = "Геометрия">1</subject>
 					<subject title = "Физика">1</subject>
-					<subject title = "ОБЖ">1</subject>
 					<subject title = "ИТ">1</subject>
 				</student>
 				<student name = "Мотылькова Диана">
-					<subject title = "История">2</subject>
+					<subject title = "История">0</subject>
+					<subject title = "Математический анализ">2</subject>
+					<subject title = "Геометрия">2</subject>
+					<subject title = "Физика">2</subject>
+					<subject title = "ИТ">2</subject>
+				</student>
+				<student name = "Пулицировская премия Катя">
+					<subject title = "Ум">2</subject>
+				</student>
+			</group>
+			<group number = "ИП-914">
+				<student name = "Лежакова Яна">
+					<subject title = "История">0</subject>
 					<subject title = "Математический анализ">0</subject>
-					<subject title = "Литература">0</subject>
+					<subject title = "Геометрия">0</subject>
 					<subject title = "Физика">0</subject>
-					<subject title = "ОБЖ">0</subject>
 					<subject title = "ИТ">0</subject>
+				</student>
+				<student name = "Хитров Ян">
+					<subject title = "История">2</subject>
+					<subject title = "Математический анализ">2</subject>
+					<subject title = "Геометрия">2</subject>
+					<subject title = "Физика">2</subject>
+					<subject title = "ИТ">2</subject>
+				</student>
+				<student name = "Сидельников Петр">
+					<subject title = "История">1</subject>
+					<subject title = "Математический анализ">1</subject>
+					<subject title = "Геометрия">1</subject>
+					<subject title = "Физика">1</subject>
+					<subject title = "ИТ">1</subject>
+				</student>
+				<student name = "Пулицировская премия Надя">
+					<subject title = "Ум">1</subject>
 				</student>
 			</group>
 		</course>
@@ -123,99 +141,102 @@
 		<course number = "1">
 			<group number = "АБ-25">
 				<student name = "Литейкин Алексей">
-					<subject title = "История">2</subject>
+					<subject title = "Физика">2</subject>
+					<subject title = "Языки программирования">2</subject>
+					<subject title = "Электроника и Схемотехника">2</subject>
 					<subject title = "Математический анализ">2</subject>
-					<subject title = "Геометрия">2</subject>
-					<subject title = "Литература">2</subject>
-					<subject title = "Физика">1</subject>
-					<subject title = "ОБЖ">0</subject>
+					<subject title = "ТЭЦ">1</subject>
+					<subject title = "Физическая культура">0</subject>
 					<subject title = "ИТ">1</subject>
 				</student>
 				<student name = "Нейронов Василий">
-					<subject title = "История">2</subject>
+					<subject title = "Физика">0</subject>
+					<subject title = "Языки программирования">2</subject>
+					<subject title = "Электроника и Схемотехника">0</subject>
 					<subject title = "Математический анализ">2</subject>
-					<subject title = "Магия">1</subject>
-					<subject title = "Литература">0</subject>
-					<subject title = "Физика">2</subject>
-					<subject title = "ОБЖ">1</subject>
-					<subject title = "ИТ">2</subject>
+					<subject title = "ТЭЦ">0</subject>
+					<subject title = "Физическая культура">0</subject>
+					<subject title = "ИТ">1</subject>
 				</student>
 				<student name = "Абдул Джабар">
-					<subject title = "История">2</subject>
-					<subject title = "Математический анализ">2</subject>
-					<subject title = "Литература">2</subject>
-					<subject title = "Физика">2</subject>
-					<subject title = "ОБЖ">1</subject>
-					<subject title = "ИТ">2</subject>
+					<subject title = "Физика">1</subject>
+					<subject title = "Языки программирования">1</subject>
+					<subject title = "Электроника и Схемотехника">2</subject>
+					<subject title = "Математический анализ">1</subject>
+					<subject title = "ТЭЦ">0</subject>
+					<subject title = "Физическая культура">2</subject>
+					<subject title = "ИТ">1</subject>
 				</student>
 			</group>
 			<group number = "АБ-26">
 				<student name = "Линейных Рита">
-					<subject title = "История">2</subject>
+					<subject title = "Физика">2</subject>
+					<subject title = "Языки программирования">2</subject>
+					<subject title = "Электроника и Схемотехника">2</subject>
 					<subject title = "Математический анализ">2</subject>
-					<subject title = "Геометрия">1</subject>
-					<subject title = "Литература">1</subject>
-					<subject title = "Физика">0</subject>
-					<subject title = "ОБЖ">0</subject>
+					<subject title = "ТЭЦ">1</subject>
+					<subject title = "Физическая культура">0</subject>
 					<subject title = "ИТ">1</subject>
 				</student>
 				<student name = "Актуальный Костя">
-					<subject title = "История">2</subject>
+					<subject title = "Физика">2</subject>
+					<subject title = "Языки программирования">2</subject>
+					<subject title = "Электроника и Схемотехника">2</subject>
 					<subject title = "Математический анализ">2</subject>
-					<subject title = "Магия">1</subject>
-					<subject title = "Литература">1</subject>
-					<subject title = "Физика">1</subject>
-					<subject title = "ОБЖ">1</subject>
+					<subject title = "ТЭЦ">1</subject>
+					<subject title = "Физическая культура">0</subject>
 					<subject title = "ИТ">1</subject>
 				</student>
 				<student name = "Смит Стэн">
-					<subject title = "История">2</subject>
-					<subject title = "Математический анализ">0</subject>
-					<subject title = "Литература">0</subject>
-					<subject title = "Физика">0</subject>
-					<subject title = "ОБЖ">0</subject>
-					<subject title = "ИТ">0</subject>
+					<subject title = "Физика">2</subject>
+					<subject title = "Языки программирования">2</subject>
+					<subject title = "Электроника и Схемотехника">2</subject>
+					<subject title = "Математический анализ">2</subject>
+					<subject title = "ТЭЦ">1</subject>
+					<subject title = "Физическая культура">0</subject>
+					<subject title = "ИТ">1</subject>
 				</student>
 			</group>
 		</course>
 		<course number = "2">
 			<group number = "АБ-35">
 				<student name = "Смит Франсин">
-					<subject title = "История">2</subject>
+					<subject title = "Физика">2</subject>
+					<subject title = "Языки программирования">2</subject>
+					<subject title = "Электроника и Схемотехника">2</subject>
 					<subject title = "Математический анализ">2</subject>
-					<subject title = "Геометрия">2</subject>
-					<subject title = "Литература">2</subject>
-					<subject title = "Физика">1</subject>
-					<subject title = "ОБЖ">0</subject>
-					<subject title = "ИТ">1</subject>
+					<subject title = "ТЭЦ">1</subject>
+					<subject title = "Физическая культура">0</subject>
+					<subject title = "Методы программирования">1</subject>
 				</student>
 				<student name = "Оружейников Иван">
-					<subject title = "История">2</subject>
-					<subject title = "Математический анализ">2</subject>
-					<subject title = "Магия">1</subject>
-					<subject title = "Литература">0</subject>
 					<subject title = "Физика">2</subject>
-					<subject title = "ОБЖ">1</subject>
-					<subject title = "ИТ">2</subject>
+					<subject title = "Языки программирования">2</subject>
+					<subject title = "Электроника и Схемотехника">2</subject>
+					<subject title = "Математический анализ">2</subject>
+					<subject title = "ТЭЦ">1</subject>
+					<subject title = "Физическая культура">0</subject>
+					<subject title = "Методы программирования">1</subject>
 				</student>
 				<student name = "Франчикова Алена">
-					<subject title = "История">2</subject>
-					<subject title = "Математический анализ">2</subject>
-					<subject title = "Литература">2</subject>
 					<subject title = "Физика">2</subject>
-					<subject title = "ОБЖ">1</subject>
-					<subject title = "ИТ">2</subject>
+					<subject title = "Языки программирования">2</subject>
+					<subject title = "Электроника и Схемотехника">2</subject>
+					<subject title = "Математический анализ">2</subject>
+					<subject title = "ТЭЦ">1</subject>
+					<subject title = "Физическая культура">0</subject>
+					<subject title = "Методы программирования">1</subject>
 				</student>
 			</group>
 			<group number = "АБ-36">
 				<student name = "Булатова Аня">
-					<subject title = "История">2</subject>
+					<subject title = "Физика">2</subject>
+					<subject title = "Языки программирования">2</subject>
+					<subject title = "Электроника и Схемотехника">2</subject>
 					<subject title = "Математический анализ">2</subject>
-					<subject title = "Геометрия">1</subject>
-					<subject title = "Литература">1</subject>
-					<subject title = "Физика">0</subject>
-					<subject title = "ОБЖ">0</subject>
-					<subject title = "ИТ">1</subject>
+					<subject title = "ТЭЦ">1</subject>
+					<subject title = "Физическая культура">0</subject>
+					<subject title = "Методы программирования">1</subject>
 				</student>
 			</group>
 		</course>		

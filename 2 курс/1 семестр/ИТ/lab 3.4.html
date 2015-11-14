@@ -4,9 +4,24 @@
  <script language="JavaScript"> 
 var mainTable = -1;
 var subject;
-var xmldoc=new ActiveXObject("Microsoft.XMLDOM") 
-xmldoc.async=false;
-xmldoc.load("lab 3.4.xml") // загружаем документ в память
+//var xmldoc=new ActiveXObject("Microsoft.XMLDOM") 
+
+function IOx(U) {
+    var X = !window.XMLHttpRequest ? new ActiveXObject('Microsoft.XMLHTTP') : new XMLHttpRequest;
+    X.open('GET', U, false);
+    X.setRequestHeader('Content-Type', 'text/xml')
+    X.send('');
+  return X.responseXML;
+}
+
+
+//var xmldoc=new ActiveXObject("Microsoft.XMLDOM") 
+var xmldoc=IOx("lab 3.4.xml");
+
+
+
+//xmldoc.async=false;
+//xmldoc.load("lab 3.4.xml") // загружаем документ в память
 
 function deleteTable()
 {
