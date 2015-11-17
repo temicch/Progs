@@ -4,24 +4,9 @@
  <script language="JavaScript"> 
 var mainTable = -1;
 var subject;
-//var xmldoc=new ActiveXObject("Microsoft.XMLDOM") 
-
-function IOx(U) {
-    var X = !window.XMLHttpRequest ? new ActiveXObject('Microsoft.XMLHTTP') : new XMLHttpRequest;
-    X.open('GET', U, false);
-    X.setRequestHeader('Content-Type', 'text/xml')
-    X.send('');
-  return X.responseXML;
-}
-
-
-//var xmldoc=new ActiveXObject("Microsoft.XMLDOM") 
-var xmldoc=IOx("lab 3.4.xml");
-
-
-
-//xmldoc.async=false;
-//xmldoc.load("lab 3.4.xml") // загружаем документ в память
+var xmldoc=new ActiveXObject("Microsoft.XMLDOM") 
+xmldoc.async=false;
+xmldoc.load("lab34.xml") // загружаем документ в память
 
 function deleteTable()
 {
@@ -121,7 +106,7 @@ function ReloadDoc(i_facultet, i_course, i_group, i_student)
 		{
 			var newCell = newRow.insertCell(-1);
 			newCell.align="center";
-			newCell.innerHTML="<input type = 'radio' disabled " + ((subject.item(i).text == j) ? "checked>" : ">");
+			newCell.innerHTML="<input name = '" + i + "' onClick = 'subject.item(" + i + ").text = " + j + "; ' type = 'radio' " + ((subject.item(i).text == j) ? "checked>" : ">");
 		}
 	}	
     var newRow=mainTable.insertRow(0);//добавляем строку в созданной таблице 
