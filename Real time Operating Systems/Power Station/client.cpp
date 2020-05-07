@@ -6,22 +6,22 @@
 #include "warehouse.h"
 #include "transport.h"
  
-int WidgetText;
- 
-char text[100];
+#define ATTACH_POINT "boilerOrder"					
+#define ATTACH_POINT_TTB "TransportToBroiler"
+
 struct arg_struct
 {
     int arg1, arg2;
 };
+
 struct msg_transport
 {
     transport *oTransport;
     int rcvid;
 };
- 
-#define ATTACH_POINT "boilerOrder"					// Здесь перед boilerOrder надо добавить HOSTNAME сервера
-#define ATTACH_POINT_TTB "TransportToBroiler"
- 
+
+int WidgetText;
+char text[100];
 int Channel;
 name_attach_t *Channel_TTB;
  
@@ -49,21 +49,12 @@ void *boilerWork(void *args)
         {
             if(MsgSendPulse(Channel, 1, 0,  (object.getX() + 40 - 15)) == -1)          
             {
-                //sprintf(text, "Error: %d", errno);
                 SetText(WidgetText, "Can't send pulse!");
-                //break;
             }
         }
         if(object.isEmpty())
         {
             int receive;
-            //int smsg = (object.getX() + 40 - 15);
-            //if(MsgSend(Channel, &smsg, sizeof(smsg), &receive, sizeof(receive)) == -1)
-            {
-                //sprintf(text, "Error: %d", errno);
-                //SetText(WidgetText, text);
-                //break;
-            }
             int rcvid = MsgReceive(Channel_TTB->chid, &receive, 1, 0);
             transport *oTransport = new transport(-35, 50, (receive >> 5));
             oTransport->show();
