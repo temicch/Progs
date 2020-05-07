@@ -1,0 +1,14 @@
+D:\Users\Home\Desktop\Repo\ОС\Chat\Chat\Client\obj\Debug\Client.Properties.Resources.resources
+D:\Users\Home\Desktop\Repo\ОС\Chat\Chat\Client\obj\Debug\Client.csproj.GenerateResource.cache
+D:\Users\Home\Desktop\Repo\ОС\Chat\Chat\Client\obj\Debug\Client.csproj.CoreCompileInputs.cache
+D:\Users\Home\Desktop\Repo\ОС\Chat\Chat\Client\obj\Debug\Client.Auth.resources
+D:\Users\Home\Desktop\Repo\ОС\Chat\Chat\Client\bin\Debug\Client.exe.config
+D:\Users\Home\Desktop\Repo\ОС\Chat\Chat\Client\bin\Debug\Client.exe
+D:\Users\Home\Desktop\Repo\ОС\Chat\Chat\Client\bin\Debug\Client.pdb
+D:\Users\Home\Desktop\Repo\ОС\Chat\Chat\Client\obj\Debug\Client.exe
+D:\Users\Home\Desktop\Repo\ОС\Chat\Chat\Client\obj\Debug\Client.pdb
+D:\Users\Home\Desktop\Repo\ОС\Chat\Chat\Client\obj\Debug\Client.csprojAssemblyReference.cache
+D:\Users\Home\Desktop\Repo\ОС\Chat\Chat\Client\obj\Debug\Client.MainForm.resources
+D:\Users\Home\Desktop\Repo\ОС\Chat\Chat\Client\bin\Debug\MessageInterface.dll
+D:\Users\Home\Desktop\Repo\ОС\Chat\Chat\Client\bin\Debug\MessageInterface.pdb
+D:\Users\Home\Desktop\Repo\ОС\Chat\Chat\Client\obj\Debug\Client.csproj.CopyComplete

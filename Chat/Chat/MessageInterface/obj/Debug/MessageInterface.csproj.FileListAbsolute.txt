@@ -1,0 +1,5 @@
+D:\Users\Home\Desktop\Repo\ОС\Chat\Chat\MessageInterface\bin\Debug\MessageInterface.dll
+D:\Users\Home\Desktop\Repo\ОС\Chat\Chat\MessageInterface\bin\Debug\MessageInterface.pdb
+D:\Users\Home\Desktop\Repo\ОС\Chat\Chat\MessageInterface\obj\Debug\MessageInterface.csproj.CoreCompileInputs.cache
+D:\Users\Home\Desktop\Repo\ОС\Chat\Chat\MessageInterface\obj\Debug\MessageInterface.dll
+D:\Users\Home\Desktop\Repo\ОС\Chat\Chat\MessageInterface\obj\Debug\MessageInterface.pdb

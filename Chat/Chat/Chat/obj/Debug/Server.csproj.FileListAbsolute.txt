@@ -1,0 +1,13 @@
+D:\Users\Home\Desktop\Repo\ОС\Chat\Chat\Chat\bin\Debug\Server.exe.config
+D:\Users\Home\Desktop\Repo\ОС\Chat\Chat\Chat\bin\Debug\Server.exe
+D:\Users\Home\Desktop\Repo\ОС\Chat\Chat\Chat\bin\Debug\Server.pdb
+D:\Users\Home\Desktop\Repo\ОС\Chat\Chat\Chat\obj\Debug\Server.Properties.Resources.resources
+D:\Users\Home\Desktop\Repo\ОС\Chat\Chat\Chat\obj\Debug\Server.csproj.GenerateResource.cache
+D:\Users\Home\Desktop\Repo\ОС\Chat\Chat\Chat\obj\Debug\Server.csproj.CoreCompileInputs.cache
+D:\Users\Home\Desktop\Repo\ОС\Chat\Chat\Chat\obj\Debug\Server.exe
+D:\Users\Home\Desktop\Repo\ОС\Chat\Chat\Chat\obj\Debug\Server.pdb
+D:\Users\Home\Desktop\Repo\ОС\Chat\Chat\Chat\obj\Debug\Chat.Form1.resources
+D:\Users\Home\Desktop\Repo\ОС\Chat\Chat\Chat\bin\Debug\MessageInterface.dll
+D:\Users\Home\Desktop\Repo\ОС\Chat\Chat\Chat\bin\Debug\MessageInterface.pdb
+D:\Users\Home\Desktop\Repo\ОС\Chat\Chat\Chat\obj\Debug\Server.csprojAssemblyReference.cache
+D:\Users\Home\Desktop\Repo\ОС\Chat\Chat\Chat\obj\Debug\Server.csproj.CopyComplete
