@@ -1,0 +1,20 @@
+G:\MINE\EDU\Дисциплины\семестр 5\Теория языков программирования и методы трансляции\Лабораторная работа 1 ПБЗ11 Диттнер\src\Lab1\Lab1\bin\Release\Lab1.exe.config
+G:\MINE\EDU\Дисциплины\семестр 5\Теория языков программирования и методы трансляции\Лабораторная работа 1 ПБЗ11 Диттнер\src\Lab1\Lab1\obj\Release\Lab1.csprojResolveAssemblyReference.cache
+G:\MINE\EDU\Дисциплины\семестр 5\Теория языков программирования и методы трансляции\Лабораторная работа 1 ПБЗ11 Диттнер\src\Lab1\Lab1\obj\Release\Lab1.Form1.resources
+G:\MINE\EDU\Дисциплины\семестр 5\Теория языков программирования и методы трансляции\Лабораторная работа 1 ПБЗ11 Диттнер\src\Lab1\Lab1\obj\Release\Lab1.Properties.Resources.resources
+G:\MINE\EDU\Дисциплины\семестр 5\Теория языков программирования и методы трансляции\Лабораторная работа 1 ПБЗ11 Диттнер\src\Lab1\Lab1\obj\Release\Lab1.csproj.GenerateResource.Cache
+G:\MINE\EDU\Дисциплины\семестр 5\Теория языков программирования и методы трансляции\Лабораторная работа 1 ПБЗ11 Диттнер\src\Lab1\Lab1\bin\Release\Lab1.exe.manifest
+G:\MINE\EDU\Дисциплины\семестр 5\Теория языков программирования и методы трансляции\Лабораторная работа 1 ПБЗ11 Диттнер\src\Lab1\Lab1\bin\Release\Lab1.application
+G:\MINE\EDU\Дисциплины\семестр 5\Теория языков программирования и методы трансляции\Лабораторная работа 1 ПБЗ11 Диттнер\src\Lab1\Lab1\bin\Release\Lab1.exe
+G:\MINE\EDU\Дисциплины\семестр 5\Теория языков программирования и методы трансляции\Лабораторная работа 1 ПБЗ11 Диттнер\src\Lab1\Lab1\bin\Release\Lab1.pdb
+G:\MINE\EDU\Дисциплины\семестр 5\Теория языков программирования и методы трансляции\Лабораторная работа 1 ПБЗ11 Диттнер\src\Lab1\Lab1\obj\Release\Lab1.exe.manifest
+G:\MINE\EDU\Дисциплины\семестр 5\Теория языков программирования и методы трансляции\Лабораторная работа 1 ПБЗ11 Диттнер\src\Lab1\Lab1\obj\Release\Lab1.application
+G:\MINE\EDU\Дисциплины\семестр 5\Теория языков программирования и методы трансляции\Лабораторная работа 1 ПБЗ11 Диттнер\src\Lab1\Lab1\obj\Release\Lab1.exe
+G:\MINE\EDU\Дисциплины\семестр 5\Теория языков программирования и методы трансляции\Лабораторная работа 1 ПБЗ11 Диттнер\src\Lab1\Lab1\obj\Release\Lab1.pdb
+D:\Users\Artyom\Desktop\Лабораторная работа 1 ПБЗ11 Диттнер\src\Lab1\Lab1\obj\Release\Lab1.csprojResolveAssemblyReference.cache
+D:\Users\Artyom\Desktop\Лабораторная работа 1 ПБЗ11 Диттнер\src\Lab1\Lab1\obj\Release\Lab1.Form1.resources
+D:\Users\Artyom\Desktop\Лабораторная работа 1 ПБЗ11 Диттнер\src\Lab1\Lab1\obj\Release\Lab1.Properties.Resources.resources
+D:\Users\Artyom\Desktop\Лабораторная работа 1 ПБЗ11 Диттнер\src\Lab1\Lab1\obj\Release\Lab1.csproj.GenerateResource.Cache
+D:\Users\Artyom\Desktop\Лабораторная работа 1 ПБЗ11 Диттнер\src\Lab1\Lab1\obj\Release\Lab1.csproj.CoreCompileInputs.cache
+D:\Users\Artyom\Desktop\Лабораторная работа 1 ПБЗ11 Диттнер\src\Lab1\Lab1\obj\Release\Lab1.exe
+D:\Users\Artyom\Desktop\Лабораторная работа 1 ПБЗ11 Диттнер\src\Lab1\Lab1\obj\Release\Lab1.pdb
