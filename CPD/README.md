@@ -1,3 +1,3 @@
 # Simple computer
 
-![Simple computer](output.png "Preview")
+<img src="output.png"  width="500" />
