@@ -1,3 +1,3 @@
 # Power Station
 
-<img src="output.gif" width="300" />
+<img src="output.gif" />
