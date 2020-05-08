@@ -1,0 +1,13 @@
+﻿  stdafx.cpp
+  AssemblyInfo.cpp
+  History.cpp
+  MyForm.cpp
+  Source.cpp
+  TCtrl.cpp
+  TFrac.cpp
+  TFracEditor.cpp
+  TMemory.cpp
+  TProc.cpp
+  Создание кода...
+  TFrac.obj : обнаружен модуль MSIL; для MSIL последовательная компоновка отключена; выполняется полная компоновка
+  ConsoleApplication1.vcxproj -> d:\Users\Home\Desktop\Repo\CalculatorM\Debug\ConsoleApplication1.exe
