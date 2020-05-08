@@ -1,6 +1,6 @@
 # Simple computer
 Simulate a simple computer
-The task is described in detail [here](./Coursework%20Report%20without%20code.doc).
+The task is described in detail [here](./Coursework%20Report%20without%20code.docx).
 ## Requirements
 Unix
 gcc
