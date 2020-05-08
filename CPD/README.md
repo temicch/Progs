@@ -1,3 +1,3 @@
 # Simple computer
 
-<img src="output.png"  width="500" />
+<img src="output.png" width="500" />
